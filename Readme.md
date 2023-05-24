@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Valeria Eremyonkova](https://up.htmlacademy.ru/htmlcss/37/user/2350101).
-* Наставник: `Оксана Вайнруб`.
+* Наставник: [Оксана Вайнруб](https://htmlacademy.ru/profile/id166797).
 
 ---
 
