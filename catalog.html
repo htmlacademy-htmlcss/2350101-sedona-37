@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Барбершоп «Бородинский»</title>
+  </head>
+
+
+  <body>
+    <header data-test="header" class="page-header">
+      <nav class="navigation">
+        <a href="index.html"><img src="img/logo.svg" alt="Логотип сайта Седона"></a>
+        <ul class="navigation-list">
+          <li class="navigation-item">
+            <a href="index.html" class="navigation-link current">Главная</a>
+          </li>
+          <li class="navigation-item">
+            <a href="catalog.html" class="navigation-link">О Седоне</a>
+          </li>
+          <li class="navigation-item">
+            <a href="#" class="navigation-link">Гостиницы</a>
+          </li>
+        </ul>
+        <ul class="navigation-list navigation-user">
+          <li class="navigation-item">
+            <a href="#" class="navigation-link ">
+              <span class="visually-hidden">Поиск</span>
+            </a>
+          </li>
+          <li class="navigation-item">
+            <a href="#" class="navigation-link ">
+              <span class="visually-hidden">Отложенное</span>
+            </a>
+          </li>
+          <li class="navigation-item">
+            <a href="#" class="button navigation-link">Хочу сюда!</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main data-test="main" class="main-inner">
+
+      <section data-test="subscribe" class="newsletter catalog-newsletter">
+        <h2 class="newsletter-heading">Подпишитесь на рассылку</h2>
+        <p class="desc newsletter-desc">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <form>
+          <label for="newsletter-email">Email</label>
+          <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
+          <button class="button newsletter-button" type="submit">Подписаться</button>
+        </form>
+      </section>
+    </main>
+
+    <footer data-test="footer" class="page-footer">
+      <ul class="socials-list">
+        <li class="socials-item">
+          <a class="socials-link" href="https://vk.com/htmlacademy">
+            <span class="visually-hidden">Вконтакте</span>
+          </a>
+        </li>
+        <li class="socials-item">
+          <a class="socials-link" href="https://t.me/htmlacademy">
+            <span class="visually-hidden">Телеграмм</span>
+          </a>
+        </li>
+        <li class="socials-item">
+          <a class="socials-link" href="https://www.youtube.com/user/htmlacademyru">
+            <span class="visually-hidden">Ютуб</span>
+          </a>
+        </li>
+      </ul>
+      <address>
+        <a class="page-footer-address-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+      </address>
+      <a class="page-footer-logo" href="https://htmlacademy.ru/">
+        <span class="visually-hidden">Логотип HTML Academy</span>
+      </a>
+    </footer>
+  </body>
+</html>
+
+<!--  Для отправки кода на автоматическое тестирование, нужно вставить следующие атрибуты:
+data-test="header" для шапки
+data-test="main" для основного содержания
+data-test="hero" для блока герой (крупный блок в начале страницы, с крупной фотографией товара и большим заголовком)
+data-test="advantages" для блока преимуществ
+data-test="search" для поиска
+data-test="filter" для блока c фильтрами на странице с каталогом
+data-test="catalog" для каталога
+data-test="subscribe" для блока подписки на рассылку
+data-test="footer" для подвала -->
