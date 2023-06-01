@@ -5,8 +5,48 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
+    <header data-test="header" class="page-header">
+      <nav class="navigation">
+        <a href="index.html"><img src="img/logo.svg" alt="Логотип сайта Седона"></a>
+        <ul class="navigation-list">
+          <li class="navigation-item">
+            <a href="index.html" class="navigation-link current">Главная</a>
+          </li>
+          <li class="navigation-item">
+            <a href="catalog.html" class="navigation-link">О Седоне</a>
+          </li>
+          <li class="navigation-item">
+            <a href="#" class="navigation-link">Гостиницы</a>
+          </li>
+        </ul>
+        <ul class="navigation-list navigation-user">
+          <li class="navigation-item">
+            <a href="#" class="navigation-link ">
+              <span class="visually-hidden">Поиск</span>
+            </a>
+          </li>
+          <li class="navigation-item">
+            <a href="#" class="navigation-link ">
+              <span class="visually-hidden">Отложенное</span>
+            </a>
+          </li>
+          <li class="navigation-item">
+            <a href="#" class="button navigation-link">Хочу сюда!</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
+
 
   </body>
 </html>
+
+<!--  Для отправки кода на автоматическое тестирование, нужно вставить следующие атрибуты:
+data-test="header" для шапки
+data-test="main" для основного содержания
+data-test="hero" для блока герой (крупный блок в начале страницы, с крупной фотографией товара и большим заголовком)
+data-test="advantages" для блока преимуществ
+data-test="search" для поиска
+data-test="subscribe" для блока подписки на рассылку
+data-test="footer" для подвала -->
