@@ -127,6 +127,8 @@ body{
 .newsletter {
   background-color: rgba(131, 179, 211, 0.12);
   background-image: url("../images/subscribe-background.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
   color: #FFFFFF;
 }
 
@@ -194,6 +196,12 @@ body{
 /* Каталог */
 
 /* Фильтр каталога */
+.inner-header-title {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+}
+
 .filter {
   background-color: rgba(131, 179, 211, 0.12);
   background-image: url("../images/filter-background.jpg");
@@ -204,9 +212,14 @@ body{
 
 .breadcrumbs-link {
   font-size: 16px;
-  line-height: 21px;
   text-decoration: none;
   color: #FFFFFF;
+}
+
+.catalog-filter-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
 }
 
 .button-submit {
@@ -228,6 +241,7 @@ body{
   color: #FFFFFF;
 }
 
+/* Каталог отелей */
 .catalog-hotels-amount {
   font-weight: 700;
   font-size: 30px;
@@ -261,4 +275,59 @@ body{
   text-align: center;
   text-transform: uppercase;
   color: #FFFFFF;
+}
+
+.hotel-card-more {
+  background-color: #756157;
+  text-decoration: none;
+}
+
+.hotel-card-button-favourite {
+  background-color: #82B3D3;
+  text-decoration: none;
+}
+
+.hotel-card-button-favourite.favourite {
+  background-color: #7DB54F;
+  text-decoration: none;
+}
+
+.hotel-card-rating {
+  display: block;
+  width: 140px;
+
+  background-color: #F2F2F2;
+}
+
+
+/* Блок подписки на странице каталога */
+.catalog-newsletter {
+  background-image: none;
+  background-color: #FFFFFF;
+  color: #000000;
+}
+
+
+/* Пагинация */
+.pagination-link {
+  display: block;
+  width: 20px;
+  height: auto;
+
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  text-decoration: none;
+  background-color: #82B3D3;
+}
+
+.pagination-current {
+  display: block;
+  width: 20px;
+  height: auto;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  text-decoration: none;
+  background: #F2F2F2;
 }
