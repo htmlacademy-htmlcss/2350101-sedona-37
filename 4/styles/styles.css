@@ -1,0 +1,333 @@
+/* Подключение шрифтов */
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+
+/* Общая стилизация*/
+body{
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  background: #FFFFFF;
+  color: #000000;
+}
+
+/*Header*/
+.page-header {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.page-header .navigation-link {
+  text-align: center;
+  text-decoration: none;
+  background: #FFFFFF;
+  color: #000000;
+}
+
+.navigation-link.search {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url("../images/search.svg");
+}
+
+.navigation-link.favourites {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url("../images/favourites.svg");
+}
+
+.button.navigation-link {
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  background: #756157;;
+  color: #FFFFFF;
+}
+
+/*Main главной страницы*/
+.hero {
+  background-color: rgba(131, 179, 211, 0.12);
+  background-image: url("../images/sedona-background.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+.advantages-title, .services-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.lead {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.desc {
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.advantage-description, .service-description {
+  text-align: center;
+}
+
+.first-advantage, .last-advantage {
+  color: #FFFFFF;
+  background-color: #82B3D3;
+}
+
+.advantages-item-odd {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-item-even {
+  background: rgba(131, 179, 211, 0.2);
+}
+
+.search-button {
+  display: block;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background: #756157;
+}
+
+
+/* Блок подписки */
+.newsletter {
+  background-color: rgba(131, 179, 211, 0.12);
+  background-image: url("../images/subscribe-background.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  color: #FFFFFF;
+}
+
+.newsletter-heading {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.field {
+  font-size: 18px;
+  background-color: #FFFFFF;
+  color: #000000;
+}
+
+.newsletter-button {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #82B3D3;
+  color: #FFFFFF;
+
+}
+
+
+/* Footer главной страницы*/
+.social-vk {
+  display: block;
+  width: 25px;
+  height: 15px;
+  background-image: url("../images/vk.svg");
+}
+
+.social-tg {
+  display: block;
+  width: 18px;
+  height: 17px;
+  background-image: url("../images/telegram.svg");
+}
+
+.social-youtube {
+  display: block;
+  width: 23px;
+  height: 18px;
+  background-image: url("../images/youtube.svg");
+}
+
+.page-footer-address-phone {
+  font-style: normal;
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  color: #000000;
+}
+
+
+
+/* Каталог */
+
+/* Фильтр каталога */
+.inner-header-title {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+}
+
+.filter {
+  background-color: rgba(131, 179, 211, 0.12);
+  background-image: url("../images/filter-background.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  color: #FFFFFF;
+}
+
+.breadcrumbs-link {
+  font-size: 16px;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.catalog-filter-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.button-submit {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #82B3D3;
+  color: #FFFFFF;
+}
+
+.button-reset {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+/* Каталог отелей */
+.catalog-hotels-amount {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.select-control-option {
+  color: #333333;
+}
+
+.hotel-card-link {
+  text-decoration: none;
+  color: #000000;
+}
+
+.hotel-card-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.hotel-card-desc {
+  color: #333333;
+}
+
+.hotel-card-more, .hotel-card-button-favourite {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.hotel-card-more {
+  background-color: #756157;
+  text-decoration: none;
+}
+
+.hotel-card-button-favourite {
+  background-color: #82B3D3;
+  text-decoration: none;
+}
+
+.hotel-card-button-favourite.favourite {
+  background-color: #7DB54F;
+  text-decoration: none;
+}
+
+.hotel-card-rating {
+  display: block;
+  width: 140px;
+
+  background-color: #F2F2F2;
+}
+
+
+/* Блок подписки на странице каталога */
+.catalog-newsletter {
+  background-image: none;
+  background-color: #FFFFFF;
+  color: #000000;
+}
+
+
+/* Пагинация */
+.pagination-link {
+  display: block;
+  width: 20px;
+  height: auto;
+
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  text-decoration: none;
+  background-color: #82B3D3;
+}
+
+.pagination-current {
+  display: block;
+  width: 20px;
+  height: auto;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  text-decoration: none;
+  background: #F2F2F2;
+}
