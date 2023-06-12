@@ -1,3 +1,4 @@
+/* Подключение шрифтов */
 @font-face {
   font-family: "PT Sans";
   font-style: normal;
@@ -12,4 +13,180 @@
   font-weight: 700;
   src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
+}
+
+
+/* Общая стилизация*/
+body{
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  background: #FFFFFF;
+  color: #000000;
+}
+
+/*Header*/
+.page-header {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.page-header .navigation-link {
+  text-align: center;
+  text-decoration: none;
+  background: #FFFFFF;
+  color: #000000;
+}
+
+.navigation-link.search {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url("../images/search.svg");
+}
+
+.navigation-link.favourites {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url("../images/favourites.svg");
+}
+
+.button.navigation-link {
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  background: #756157;;
+  color: #FFFFFF;
+}
+
+/*Main*/
+.hero {
+  background-color: rgba(131, 179, 211, 0.12);
+  background-image: url("../images/sedona-background.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+.advantages-title, .services-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.lead {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.desc {
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.advantage-description, .service-description {
+  text-align: center;
+}
+
+.first-advantage, .last-advantage {
+  color: #FFFFFF;
+  background-color: #82B3D3;
+}
+
+.advantages-item-odd {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-item-even {
+  background: rgba(131, 179, 211, 0.2);
+}
+
+.search-button {
+  display: block;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background: #756157;
+}
+
+
+
+
+.newsletter {
+  background-color: rgba(131, 179, 211, 0.12);
+  background-image: url("../images/subscribe-background.jpg");
+
+  color: #FFFFFF;
+}
+
+.newsletter-heading {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.field {
+  font-size: 18px;
+  background-color: #FFFFFF;
+  color: #000000;
+}
+
+.newsletter-button {
+  background-color: #82B3D3;;
+  color: #FFFFFF;
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+
+/* Footer */
+.social-vk {
+  display: block;
+  width: 25px;
+  height: 15px;
+  background-image: url("../images/vk.svg");
+}
+
+.social-tg {
+  display: block;
+  width: 18px;
+  height: 17px;
+  background-image: url("../images/telegram.svg");
+}
+
+.social-youtube {
+  display: block;
+  width: 23px;
+  height: 18px;
+  background-image: url("../images/youtube.svg");
+}
+
+.page-footer-address-phone {
+  font-style: normal;
+  font-size: 40px;
+  line-height: 40px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  color: #000000;
 }
