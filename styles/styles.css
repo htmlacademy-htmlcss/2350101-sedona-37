@@ -310,10 +310,6 @@ body{
 
 /* Пагинация */
 .pagination-link {
-  display: block;
-  width: 20px;
-  height: auto;
-
   text-align: center;
   text-transform: uppercase;
   color: #FFFFFF;
@@ -322,9 +318,6 @@ body{
 }
 
 .pagination-current {
-  display: block;
-  width: 20px;
-  height: auto;
   text-align: center;
   text-transform: uppercase;
   color: #000000;
