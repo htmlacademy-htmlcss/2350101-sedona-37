@@ -63,7 +63,7 @@ body{
   color: #FFFFFF;
 }
 
-/*Main*/
+/*Main главной страницы*/
 .hero {
   background-color: rgba(131, 179, 211, 0.12);
   background-image: url("../images/sedona-background.jpg");
@@ -123,12 +123,10 @@ body{
 }
 
 
-
-
+/* Блок подписки */
 .newsletter {
   background-color: rgba(131, 179, 211, 0.12);
   background-image: url("../images/subscribe-background.jpg");
-
   color: #FFFFFF;
 }
 
@@ -147,18 +145,18 @@ body{
 }
 
 .newsletter-button {
-  background-color: #82B3D3;;
-  color: #FFFFFF;
-
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
+  background-color: #82B3D3;
+  color: #FFFFFF;
+
 }
 
 
-/* Footer */
+/* Footer главной страницы*/
 .social-vk {
   display: block;
   width: 25px;
@@ -189,4 +187,78 @@ body{
   text-transform: uppercase;
 
   color: #000000;
+}
+
+
+
+/* Каталог */
+
+/* Фильтр каталога */
+.filter {
+  background-color: rgba(131, 179, 211, 0.12);
+  background-image: url("../images/filter-background.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  color: #FFFFFF;
+}
+
+.breadcrumbs-link {
+  font-size: 16px;
+  line-height: 21px;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.button-submit {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #82B3D3;
+  color: #FFFFFF;
+}
+
+.button-reset {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.catalog-hotels-amount {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.select-control-option {
+  color: #333333;
+}
+
+.hotel-card-link {
+  text-decoration: none;
+  color: #000000;
+}
+
+.hotel-card-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.hotel-card-desc {
+  color: #333333;
+}
+
+.hotel-card-more, .hotel-card-button-favourite {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
 }
