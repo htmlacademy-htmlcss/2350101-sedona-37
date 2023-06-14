@@ -203,7 +203,7 @@ body{
 }
 
 .filter {
-  background-color: rgba(131, 179, 211, 0.12);
+  background-color: rgb(44, 71, 94);
   background-image: url("../images/filter-background.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
