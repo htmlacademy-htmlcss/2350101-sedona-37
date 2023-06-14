@@ -21,7 +21,7 @@ body{
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 21px;
-  background: #FFFFFF;
+  background: #F2F2F2;
   color: #000000;
 }
 
@@ -203,7 +203,7 @@ body{
 }
 
 .filter {
-  background-color: rgba(131, 179, 211, 0.12);
+  background-color: rgb(44, 71, 94);
   background-image: url("../images/filter-background.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
