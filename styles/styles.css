@@ -65,10 +65,10 @@ body{
 
 /*Main главной страницы*/
 .hero {
-  background-color: rgba(131, 179, 211, 0.12);
+  background-color: rgb(44, 71, 94);
   background-image: url("../images/sedona-background.jpg");
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: cover;
 }
 
 .advantages-title, .services-title {
@@ -112,6 +112,9 @@ body{
 
 .search-button {
   display: block;
+  width: 350px;
+  margin: 0 auto;
+
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
@@ -119,7 +122,7 @@ body{
   text-decoration: none;
   text-transform: uppercase;
   color: #FFFFFF;
-  background: #756157;
+  background-color: #756157;
 }
 
 
@@ -128,7 +131,7 @@ body{
   background-color: rgba(131, 179, 211, 0.12);
   background-image: url("../images/subscribe-background.jpg");
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: cover;
   color: #FFFFFF;
 }
 
@@ -206,7 +209,7 @@ body{
   background-color: rgb(44, 71, 94);
   background-image: url("../images/filter-background.jpg");
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: cover;
   color: #FFFFFF;
 }
 
