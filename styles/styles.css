@@ -37,6 +37,7 @@ body{
 
 /*Header*/
 .page-header {
+  background: #FFFFFF;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -49,11 +50,11 @@ body{
 
 .navigation-list {
   margin-left: 45px;
-  width: 500px;
+  max-width: 500px;
 }
 
 .navigation-user {
-  width: 350px;
+max-width: 350px;
   margin-left: auto;
 }
 
@@ -93,11 +94,16 @@ body{
   flex-grow: 1;
 }
 
+.main-index, .main-inner {
+  background: #FFFFFF;
+}
+
 .hero {
   background-color: rgb(44, 71, 94);
   background-image: url("../images/sedona-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center bottom;
 }
 
 .welcome-image {
@@ -203,6 +209,8 @@ body{
 .page-footer {
   display: flex;
   width: 1200px;
+
+  background-color: #FFFFFF;
 }
 
 .socials-list {
