@@ -306,6 +306,10 @@ body{
   color: #333333;
 }
 
+.hotel-list {
+  display: flex;
+}
+
 .hotel-card-link {
   text-decoration: none;
   color: #000000;
