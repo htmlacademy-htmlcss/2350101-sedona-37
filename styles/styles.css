@@ -44,9 +44,11 @@ body{
 
 .navigation {
   display: flex;
+  margin-left: 70px;
 }
 
 .navigation-list {
+  margin-left: 45px;
   width: 500px;
 }
 
