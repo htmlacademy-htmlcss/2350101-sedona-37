@@ -17,12 +17,21 @@
 
 
 /* Общая стилизация*/
+html {
+  height: 100%;
+}
+
 body{
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 21px;
   background: #F2F2F2;
   color: #000000;
+
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
 }
 
 /*Header*/
@@ -64,6 +73,10 @@ body{
 }
 
 /*Main главной страницы*/
+.main-container {
+  flex-grow: 1;
+}
+
 .hero {
   background-color: rgb(44, 71, 94);
   background-image: url("../images/sedona-background.jpg");
