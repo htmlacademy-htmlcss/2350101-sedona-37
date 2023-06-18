@@ -41,6 +41,19 @@ body{
   line-height: 24px;
 }
 
+.navigation {
+  display: flex;
+}
+
+.navigation-list {
+  width: 500px;
+}
+
+.navigation-user {
+  width: 350px;
+  margin-left: auto;
+}
+
 .page-header .navigation-link {
   text-align: center;
   text-decoration: none;
