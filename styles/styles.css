@@ -28,7 +28,8 @@ body{
   background: #F2F2F2;
   color: #000000;
 
-  margin: 0;
+  width: 1200px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   min-height: 100%;
@@ -97,12 +98,9 @@ body{
   background-size: cover;
 }
 
-.advantages-title, .services-title {
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 28px;
-  text-align: center;
-  text-transform: uppercase;
+.welcome-image {
+  display: block;
+  margin: 0 auto;
 }
 
 .lead {
@@ -117,6 +115,15 @@ body{
   font-size: 22px;
   line-height: 26px;
   text-align: center;
+}
+
+/* Плюсы Седоны */
+.advantages-title, .services-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .advantage-description, .service-description {
@@ -135,6 +142,9 @@ body{
 .advantages-item-even {
   background: rgba(131, 179, 211, 0.2);
 }
+
+
+/* Сервисы */
 
 .search-button {
   display: block;
@@ -188,6 +198,15 @@ body{
 
 
 /* Footer главной страницы*/
+.page-footer {
+  display: flex;
+  width: 1200px;
+}
+
+.socials-list {
+  width: 200px;
+}
+
 .social-vk {
   display: block;
   width: 25px;
@@ -209,6 +228,10 @@ body{
   background-image: url("../images/youtube.svg");
 }
 
+.page-footer-address {
+  margin: 0 auto;
+}
+
 .page-footer-address-phone {
   font-style: normal;
   font-size: 40px;
@@ -216,11 +239,12 @@ body{
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-
   color: #000000;
 }
 
-
+.page-footer-logo {
+  margin-left: auto;
+}
 
 /* Каталог */
 
