@@ -107,6 +107,9 @@ body{
   background-size: cover;
   background-position: center bottom;
   text-align: center;
+
+  padding-top: 50px;
+  padding-bottom: 80px;
 }
 
 .lead {
@@ -124,9 +127,25 @@ body{
 }
 
 /* Плюсы Седоны */
-.advantages-list, .services-list {
+.advantages-list {
+  display: flex;
+
   margin: 0;
   padding: 0;
+  list-style: none;
+}
+
+.advantages-item {
+  box-sizing: border-box;
+  padding: 110px 85px;
+  min-height: 385px;
+  min-width: 400px;
+  text-align: center;
+}
+
+.advantages-title {
+  margin: 0 auto;
+  width: 175px;
 }
 
 .advantages-title, .services-title {
@@ -141,9 +160,23 @@ body{
   text-align: center;
 }
 
+.advantage-image {
+  display: block;
+}
+
 .first-advantage, .last-advantage {
+  display: flex;
+
   color: #FFFFFF;
   background-color: #82B3D3;
+}
+
+.first-advantage-wrapper, .last-advantage-wrapper {
+  box-sizing: border-box;
+  padding: 100px 85px;
+  min-height: 385px;
+  min-width: 400px;
+  text-align: center;
 }
 
 .advantages-item-odd {
@@ -156,6 +189,26 @@ body{
 
 
 /* Сервисы */
+.services-list {
+  display: flex;
+
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.services-item {
+  box-sizing: border-box;
+  padding: 80px 85px;
+  min-height: 385px;
+  min-width: 400px;
+  text-align: center;
+}
+
+.services-item-odd {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
 .search {
   text-align: center;
 }
