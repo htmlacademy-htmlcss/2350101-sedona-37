@@ -129,6 +129,7 @@ body{
 /* Плюсы Седоны */
 .advantages-list {
   display: flex;
+  flex-wrap: wrap;
 
   margin: 0;
   padding: 0;
@@ -137,10 +138,6 @@ body{
 
 .advantages-item {
   box-sizing: border-box;
-  padding: 110px 85px;
-  min-height: 385px;
-  min-width: 400px;
-  text-align: center;
 }
 
 .advantages-title {
@@ -164,19 +161,25 @@ body{
   display: block;
 }
 
-.first-advantage, .last-advantage {
+.advantages-item-wrapper {
   display: flex;
+  flex-direction: column ;
+  box-sizing: border-box;
+  text-align: center;
+
+  width: 400px;
+  min-height: 385px;
+  padding: 100px 85px;
+}
+
+.advantages-item-wide {
+  display: flex;
+  box-sizing: border-box;
+  width: 100%;
+  text-align: center;
 
   color: #FFFFFF;
   background-color: #82B3D3;
-}
-
-.first-advantage-wrapper, .last-advantage-wrapper {
-  box-sizing: border-box;
-  padding: 100px 85px;
-  min-height: 385px;
-  min-width: 400px;
-  text-align: center;
 }
 
 .advantages-item-odd {
