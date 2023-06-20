@@ -45,19 +45,32 @@ body{
 
 .navigation {
   display: flex;
-  margin-left: 70px;
+  margin-left: 50px;
 }
 
 .navigation-list {
+  display: flex;
+
   margin: 0;
-  margin-left: 45px;
+  margin-left: 40px;
   padding: 0;
+  list-style: none;
   max-width: 500px;
 }
 
-.navigation-user {
-  max-width: 350px;
+.navigation-item {
+  padding: 20px 16px;
+}
+
+.navigation-user-list {
+  display: flex;
+
+  margin: 0;
   margin-left: auto;
+  margin-right: 70px;
+  padding: 0;
+  list-style: none;
+  max-width: 350px;
 }
 
 .page-header .navigation-link {
@@ -162,7 +175,6 @@ body{
 .advantages-item-wrapper {
   display: flex;
   flex-direction: column ;
-  align-self: center;
   box-sizing: border-box;
   text-align: center;
 
@@ -287,15 +299,19 @@ body{
 /* Footer главной страницы*/
 .page-footer {
   display: flex;
-  width: 1200px;
+  justify-content: space-between;
 
+  width: 1200px;
   background-color: #FFFFFF;
 }
 
 .socials-list {
+  display: flex;
+
   margin: 0;
   padding: 0;
-  width: 200px;
+  list-style: none;
+  min-width: 150px;
 }
 
 .social-vk {
@@ -319,9 +335,6 @@ body{
   background-image: url("../images/youtube.svg");
 }
 
-.page-footer-address {
-  margin: 0 auto;
-}
 
 .page-footer-address-phone {
   font-style: normal;
@@ -331,10 +344,6 @@ body{
   text-decoration: none;
   text-transform: uppercase;
   color: #000000;
-}
-
-.page-footer-logo {
-  margin-left: auto;
 }
 
 /* Каталог */
