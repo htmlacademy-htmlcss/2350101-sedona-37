@@ -143,9 +143,7 @@ body{
 .advantages-title {
   margin: 0 auto;
   width: 175px;
-}
 
-.advantages-title, .services-title {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
@@ -153,7 +151,7 @@ body{
   text-transform: uppercase;
 }
 
-.advantage-description, .service-description {
+.advantage-description {
   text-align: center;
 }
 
@@ -164,22 +162,30 @@ body{
 .advantages-item-wrapper {
   display: flex;
   flex-direction: column ;
+  align-self: center;
   box-sizing: border-box;
   text-align: center;
 
   width: 400px;
   min-height: 385px;
   padding: 100px 85px;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .advantages-item-wide {
   display: flex;
+  flex-wrap: wrap;
   box-sizing: border-box;
   width: 100%;
   text-align: center;
 
   color: #FFFFFF;
   background-color: #82B3D3;
+}
+
+.advantages-item-wide-reverse {
+  flex-direction: row-reverse;
 }
 
 .advantages-item-odd {
@@ -205,6 +211,18 @@ body{
   padding: 80px 85px;
   min-height: 385px;
   min-width: 400px;
+  text-align: center;
+}
+
+.services-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.service-description {
   text-align: center;
 }
 
