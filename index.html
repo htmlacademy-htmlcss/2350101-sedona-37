@@ -22,11 +22,11 @@
         </ul>
         <ul class="navigation-user-list">
           <li class="navigation-item">
-            <a href="#" class="navigation-link search">
+            <a href="#" class="navigation-link navigation-link-search">
             </a>
           </li>
           <li class="navigation-item">
-            <a href="#" class="navigation-link favourites">
+            <a href="#" class="navigation-link navigation-link-favourites">
             </a>
           </li>
           <li class="navigation-item">
@@ -43,8 +43,10 @@
       </section>
 
       <section data-test="advantages" class="advantages">
-        <p class="lead">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
-        <p class="desc">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+        <div class="advantages-start-wrapper">
+          <p class="lead">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
+          <p class="desc">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+        </div>
         <h2 class="visually-hidden">Преимущества</h2>
         <ul class="advantages-list">
           <li class="advantages-item advantages-item-wide">
@@ -80,8 +82,11 @@
             <img src="images/sedona-devil-bridge.jpg" width="800" height="385" alt="Мост дьявола в городе Седона." class="advantage-image">
           </li>
         </ul>
-        <p class="lead">Приезжайте в Седону отдохнуть в комфорте и уюте!</p>
-        <p class="desc">Опытный персонал и качественное обслуживание!</p>
+        <div class="advantages-end-wrapper">
+          <p class="lead">Приезжайте в Седону отдохнуть в комфорте и уюте!</p>
+          <p class="desc">Опытный персонал и качественное обслуживание!</p>
+        </div>
+
       </section>
 
       <section class="services">
@@ -107,7 +112,7 @@
 
       <section data-test="search" class="search">
         <h2 class="lead">Заинтересовались?</h2>
-        <p class="desc">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <p class="desc desc-search">Укажите предполагаемые даты поездки, <br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <a href="#" class="button search-button">Поиск гостиницы в Седоне</a>
       </section>
 
@@ -115,7 +120,7 @@
         <h2 class="newsletter-heading">Подпишитесь на рассылку</h2>
         <p class="desc newsletter-desc">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-          <label for="newsletter-email">Email</label>
+          <label for="newsletter-email" hidden>Email</label>
           <input class="field" placeholder="Ваш e-mail" type="text" name="newsletter-email" id="newsletter-email" required>
           <button class="button newsletter-button" type="submit">Подписаться</button>
         </form>
