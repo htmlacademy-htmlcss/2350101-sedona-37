@@ -455,6 +455,10 @@ body{
   justify-content: space-between;
 }
 
+.catalog-filter-group-left {
+  margin-right: 70px;
+}
+
 .catalog-filter-title {
   font-weight: 700;
   font-size: 20px;
@@ -467,6 +471,12 @@ body{
   list-style: none;
 }
 
+.catalog-filter-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .button-submit {
   font-weight: 700;
   font-size: 16px;
@@ -475,6 +485,9 @@ body{
   text-transform: uppercase;
   background-color: #82B3D3;
   color: #FFFFFF;
+
+  padding: 8px 50px;
+  margin-bottom: 32px;
 }
 
 .button-reset {
@@ -484,6 +497,8 @@ body{
   text-align: center;
   text-transform: uppercase;
   color: #FFFFFF;
+
+  padding: 8px 50px;
 }
 
 /* Каталог отелей */
