@@ -364,31 +364,30 @@ body{
   width: 47px;
 }
 
-.social-link {
+.socials-link {
   display: block;
   box-sizing: border-box;
   padding: 0 10px;
+  height: 40px;
+  width: 47px;
 }
 
-.social-vk {
-  display: block;
-  width: 25px;
-  height: 15px;
-  background-image: url("../images/vk.svg");
+.socials-link-vk {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.social-tg {
-  display: block;
-  width: 18px;
-  height: 17px;
-  background-image: url("../images/telegram.svg");
+.socials-link-tg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.social-youtube {
-  display: block;
-  width: 23px;
-  height: 18px;
-  background-image: url("../images/youtube.svg");
+.socials-link-youtube {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .page-footer-address-phone {
@@ -399,6 +398,11 @@ body{
   text-decoration: none;
   text-transform: uppercase;
   color: #000000;
+}
+
+.page-footer-logo {
+  display: flex;
+  align-items: center;
 }
 
 /* Каталог */
