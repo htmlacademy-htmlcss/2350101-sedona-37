@@ -195,6 +195,7 @@ body{
 .advantages-item-wrapper {
   display: flex;
   flex-direction: column ;
+  justify-content: center;
   box-sizing: border-box;
   text-align: center;
 
@@ -364,31 +365,30 @@ body{
   width: 47px;
 }
 
-.social-link {
+.socials-link {
   display: block;
   box-sizing: border-box;
   padding: 0 10px;
+  height: 40px;
+  width: 47px;
 }
 
-.social-vk {
-  display: block;
-  width: 25px;
-  height: 15px;
-  background-image: url("../images/vk.svg");
+.socials-link-vk {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.social-tg {
-  display: block;
-  width: 18px;
-  height: 17px;
-  background-image: url("../images/telegram.svg");
+.socials-link-tg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.social-youtube {
-  display: block;
-  width: 23px;
-  height: 18px;
-  background-image: url("../images/youtube.svg");
+.socials-link-youtube {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .page-footer-address-phone {
@@ -399,6 +399,11 @@ body{
   text-decoration: none;
   text-transform: uppercase;
   color: #000000;
+}
+
+.page-footer-logo {
+  display: flex;
+  align-items: center;
 }
 
 /* Каталог */
@@ -451,6 +456,10 @@ body{
   justify-content: space-between;
 }
 
+.catalog-filter-group-left {
+  margin-right: 70px;
+}
+
 .catalog-filter-title {
   font-weight: 700;
   font-size: 20px;
@@ -463,6 +472,12 @@ body{
   list-style: none;
 }
 
+.catalog-filter-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .button-submit {
   font-weight: 700;
   font-size: 16px;
@@ -471,6 +486,9 @@ body{
   text-transform: uppercase;
   background-color: #82B3D3;
   color: #FFFFFF;
+
+  padding: 8px 50px;
+  margin-bottom: 32px;
 }
 
 .button-reset {
@@ -480,6 +498,8 @@ body{
   text-align: center;
   text-transform: uppercase;
   color: #FFFFFF;
+
+  padding: 8px 50px;
 }
 
 /* Каталог отелей */
@@ -493,6 +513,8 @@ body{
 
 .catalog-hotels-header {
   display: flex;
+
+  margin-bottom: 40px;
 }
 
 .catalog-hotels-amount {
@@ -521,15 +543,49 @@ body{
 
 /* Карточки отелей */
 .hotel-list {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 340px);
 
   margin: 0;
+  margin-bottom: 40px;
   padding: 0;
   list-style: none;
 }
 
+.hotel-card {
+  padding: 20px;
+  border-radius: 4px;
+  border: 1px solid #E6E6E6;
+}
+
+.hotel-card-wrapper {
+  display: grid;
+  row-gap: 16px;
+  column-gap: 20px;
+  grid-template-columns: repeat(2, 140px);
+  grid-template-areas:
+    "image image"
+    "title title"
+    "housing-type price"
+    "button-more button-to-favourite"
+    "stars rating";
+}
+
+.hotel-card-image {
+  display: block;
+}
+
 .hotel-card-link {
+  grid-area: image;
+
+  text-decoration: none;
+  color: #000000;
+}
+
+.hotel-card-link-title {
+  grid-area: title;
+
   text-decoration: none;
   color: #000000;
 }
@@ -538,13 +594,52 @@ body{
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
+
+  margin: 0;
+  padding: 0;
 }
 
 .hotel-card-desc {
   color: #333333;
 }
 
+.hotel-card-desc-housing-type {
+  grid-area: housing-type;
+}
+
+.hotel-card-desc-price {
+  grid-area: price;
+
+  margin-left: auto;
+}
+
+.hotel-card-stars {
+  grid-area: stars;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 6px;
+}
+
+.hotel-card-rating {
+  grid-area: rating;
+
+  background-color: #F2F2F2;
+  padding: 8px 16px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .hotel-card-more, .hotel-card-button-favourite {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 16px;
+  border-radius: 4px;
+
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -554,11 +649,15 @@ body{
 }
 
 .hotel-card-more {
+  grid-area: button-more;
+
   background-color: #756157;
   text-decoration: none;
 }
 
 .hotel-card-button-favourite {
+  grid-area: button-to-favourite;
+
   background-color: #82B3D3;
   text-decoration: none;
 }
@@ -566,13 +665,6 @@ body{
 .hotel-card-button-favourite.favourite {
   background-color: #7DB54F;
   text-decoration: none;
-}
-
-.hotel-card-rating {
-  display: block;
-  width: 140px;
-
-  background-color: #F2F2F2;
 }
 
 
@@ -590,6 +682,7 @@ body{
   flex-wrap: wrap;
 
   margin: 0;
+  margin-top: 40px;
   padding: 0;
   list-style: none;
 }
