@@ -640,6 +640,7 @@ body{
 
   background-color: #F2F2F2;
   padding: 8px 16px;
+  margin: 0;
 
   display: flex;
   justify-content: center;
