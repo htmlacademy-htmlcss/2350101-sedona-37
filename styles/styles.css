@@ -1,6 +1,6 @@
-* {
+/* * {
   outline: 1px solid green;
-}
+} */
 
 /* Подключение шрифтов */
 @font-face {
@@ -571,37 +571,30 @@ body{
 }
 
 .hotel-card {
+  display: grid;
+  row-gap: 16px;
+  column-gap: 20px;
+  grid-template-columns: repeat(2, 140px);
+  grid-template-rows: 212px 1fr;
+
   padding: 20px;
   border-radius: 4px;
   border: 1px solid #E6E6E6;
 }
 
-.hotel-card-wrapper {
-  display: grid;
-  row-gap: 16px;
-  column-gap: 20px;
-  grid-template-columns: repeat(2, 140px);
-  grid-template-areas:
-    "image image"
-    "title title"
-    "housing-type price"
-    "button-more button-to-favourite"
-    "stars rating";
-}
-
 .hotel-card-image {
   display: block;
+
+  grid-column: 1 / span 2;
 }
 
 .hotel-card-link {
-  grid-area: image;
-
   text-decoration: none;
   color: #000000;
 }
 
 .hotel-card-link-title {
-  grid-area: title;
+  grid-column: 1 / span 2;
 
   text-decoration: none;
   color: #000000;
@@ -620,19 +613,11 @@ body{
   color: #333333;
 }
 
-.hotel-card-desc-housing-type {
-  grid-area: housing-type;
-}
-
 .hotel-card-desc-price {
-  grid-area: price;
-
   margin-left: auto;
 }
 
 .hotel-card-stars {
-  grid-area: stars;
-
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -640,8 +625,6 @@ body{
 }
 
 .hotel-card-rating {
-  grid-area: rating;
-
   background-color: #F2F2F2;
   padding: 8px 16px;
   margin: 0;
@@ -667,15 +650,11 @@ body{
 }
 
 .hotel-card-more {
-  grid-area: button-more;
-
   background-color: #756157;
   text-decoration: none;
 }
 
 .hotel-card-button-favourite {
-  grid-area: button-to-favourite;
-
   background-color: #82B3D3;
   text-decoration: none;
 }
