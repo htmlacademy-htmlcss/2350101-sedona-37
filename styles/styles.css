@@ -140,10 +140,10 @@ body{
 
 .hero {
   background-color: rgb(44, 71, 94);
-  background-image: url("../images/sedona-background.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center bottom;
+  background-image: url("../images/sedona-background-bottom.svg"), url("../images/sedona-background.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-size: 101%, cover;
+  background-position: bottom, center bottom;
   text-align: center;
 
   padding-top: 50px;
