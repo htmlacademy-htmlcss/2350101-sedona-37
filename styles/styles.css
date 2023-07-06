@@ -56,11 +56,17 @@ body{
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
+
+  z-index: 1;
 }
 
 .navigation {
   display: flex;
   margin-left: 50px;
+}
+
+.navigation-sedona-logo {
+  display: block;
 }
 
 .navigation-list {
@@ -75,7 +81,7 @@ body{
 }
 
 .navigation-item {
-  padding: 20px 16px;
+  padding-top: 20px;
 }
 
 .navigation-user-list {
@@ -90,10 +96,40 @@ body{
 }
 
 .page-header .navigation-link {
+  position: relative;
+
+  padding: 20px 16px;
+
   text-align: center;
   text-decoration: none;
   background: #FFFFFF;
   color: #000000;
+}
+
+.navigation-link.current::before {
+  content: "";
+  position: absolute;
+  right: 16px;
+  bottom: 0;
+  left: 16px;
+  height: 2px;
+  background-color: #000000;
+}
+
+.navigation-link-search {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url("../images/search.svg");
+  background-repeat: no-repeat;
+}
+
+.navigation-link-favourites {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url("../images/favourites.svg");
+  background-repeat: no-repeat;
 }
 
 .navigation-link-want-to-go {
@@ -105,21 +141,7 @@ body{
   border-radius: 4px;
 }
 
-.navigation-link.navigation-link-search {
-  display: block;
-  width: 20px;
-  height: 20px;
-  background-image: url("../images/search.svg");
-}
-
-.navigation-link.navigation-link-favourites {
-  display: block;
-  width: 20px;
-  height: 20px;
-  background-image: url("../images/favourites.svg");
-}
-
-.button.navigation-link {
+.button.navigation-link-want-to-go {
   font-size: 16px;
   line-height: 20px;
   text-align: center;
@@ -136,6 +158,7 @@ body{
 
 .main-index, .main-inner {
   background: #FFFFFF;
+  margin-top: -11px;
 }
 
 .hero {
@@ -204,6 +227,7 @@ body{
 
 .advantage-image {
   display: block;
+  align-self: center;
 }
 
 .advantages-item-wrapper {
@@ -433,7 +457,23 @@ body{
   width: 47px;
 }
 
+.socials-link:hover svg path{
+  fill: #68A2CA;
+}
+
+.socials-link:focus svg path {
+  fill: #68A2CA;
+}
+
+.socials-link:active {
+  fill: #68A2CA;
+  fill-opacity: 0.3;
+}
+
 .page-footer-address-phone {
+  display: flex;
+  flex-direction: column;
+
   font-style: normal;
   font-size: 40px;
   line-height: 40px;
@@ -443,9 +483,25 @@ body{
   color: #000000;
 }
 
+.page-footer-address-phone:hover {
+  color: #756157;
+}
+
+.page-footer-address-phone:active {
+  opacity: 0.3;
+}
+
 .page-footer-logo {
   display: flex;
   align-items: center;
+}
+
+.page-footer-logo:hover svg path {
+  fill: #756157;
+}
+
+.page-footer-logo:active svg path {
+  fill-opacity: 0.3;
 }
 
 /* Каталог */
@@ -571,6 +627,9 @@ body{
 }
 
 .select-control {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 21px;
   align-self: center;
 
   margin-left: auto;
@@ -597,10 +656,13 @@ body{
   border-radius: 4px;
 
   margin-right: 8px;
-  padding: 14px 12px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.view-button {
+  padding: 12px;
 }
 
 .catalog-view-item:last-child {
@@ -678,15 +740,15 @@ body{
 }
 
 .hotel-card-two-stars {
-  background-image: url("../images/two-stars.svg");
+  background-image: url("../images/catalog/stars-2.svg");
 }
 
 .hotel-card-three-stars {
-  background-image: url("../images/three-stars.svg");
+  background-image: url("../images/catalog/stars-3.svg");
 }
 
 .hotel-card-four-stars {
-  background-image: url("../images/four-stars.svg");
+  background-image: url("../images/catalog/stars-4.svg");
 }
 
 .hotel-card-rating {
@@ -743,7 +805,7 @@ body{
 .pagination-list {
   display: flex;
   flex-wrap: wrap;
-  border-top: 1px solid #F2F2F2;
+  border-top: 1px solid rgb(242, 242, 242);
 
   margin: 0;
   margin-top: 40px;
@@ -768,20 +830,29 @@ body{
 
   text-align: center;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: rgb(255, 255, 255);
   text-decoration: none;
+  background-color: rgb(130, 179, 211);
+}
+
+.pagination-link:hover {
+  background-color: rgb(104, 162, 202);
+}
+
+.pagination-link:active {
+  color: rgba(255, 255, 255, 0.3);
   background-color: #82B3D3;
 }
 
-.pagination-three-dots {
-  background-color: #FFFFFF;
+.pagination-link.pagination-three-dots {
+  background-color: rgb(255, 255, 255);
   color: #000000;
 }
 
-.pagination-current {
+.pagination-link.pagination-current {
   text-align: center;
   text-transform: uppercase;
   color: #000000;
   text-decoration: none;
-  background: #F2F2F2;
+  background: rgb(242, 242, 242);
 }
