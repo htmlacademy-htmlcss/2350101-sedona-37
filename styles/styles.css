@@ -29,8 +29,8 @@ body{
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 21px;
-  background: #F2F2F2;
-  color: #000000;
+  background: rgb(242, 242, 242);
+  color: rgb(0, 0, 0);
 
   width: 1200px;
   margin: 0 auto;
@@ -50,14 +50,19 @@ body{
   overflow: hidden;
 }
 
+:disabled {
+  background-color: rgb(229, 229, 229);
+  color: rgb(255, 255, 255);
+}
+
 /*Header*/
 .page-header {
-  background: #FFFFFF;
+  background: rgb(255, 255, 255);
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
 
-  z-index: 1;
+  margin-bottom: -5px;
 }
 
 .navigation {
@@ -67,6 +72,8 @@ body{
 
 .navigation-sedona-logo {
   display: block;
+  position: relative;
+  z-index: 1;
 }
 
 .navigation-list {
@@ -95,15 +102,15 @@ body{
   max-width: 350px;
 }
 
-.page-header .navigation-link {
+.navigation-link{
   position: relative;
 
   padding: 20px 16px;
 
   text-align: center;
   text-decoration: none;
-  background: #FFFFFF;
-  color: #000000;
+  background: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
 }
 
 .navigation-link.current::before {
@@ -113,42 +120,39 @@ body{
   bottom: 0;
   left: 16px;
   height: 2px;
-  background-color: #000000;
+  background-color: rgb(0, 0, 0);
+}
+
+.navigation-user-link {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 22px 12px;
 }
 
 .navigation-link-search {
-  display: block;
-  width: 20px;
-  height: 20px;
   background-image: url("../images/search.svg");
-  background-repeat: no-repeat;
 }
 
 .navigation-link-favourites {
-  display: block;
-  width: 20px;
-  height: 20px;
   background-image: url("../images/favourites.svg");
-  background-repeat: no-repeat;
 }
 
 .navigation-link-want-to-go {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 8px 16px;
+  padding: 8px 34px;
+  margin-top: 14px;
+  margin-left: 20px;
 
-  border-radius: 4px;
-}
-
-.button.navigation-link-want-to-go {
   font-size: 16px;
   line-height: 20px;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  background: #756157;;
-  color: #FFFFFF;
 }
 
 /*Main главной страницы*/
@@ -157,8 +161,7 @@ body{
 }
 
 .main-index, .main-inner {
-  background: #FFFFFF;
-  margin-top: -11px;
+  background-color: rgb(255, 255, 255);
 }
 
 .hero {
@@ -194,6 +197,81 @@ body{
   font-size: 22px;
   line-height: 26px;
   text-align: center;
+}
+
+.button-brown {
+  background-color: rgb(117, 97, 87);
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  outline: none;
+  border-radius: 4px;
+  border: 0;
+  cursor: pointer;
+}
+
+.button-brown:hover {
+  background-color: rgb(97, 80, 72);
+}
+
+.button-brown:active {
+  background-color: rgb(117, 97, 87);
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button-blue {
+  background-color: rgb(130, 179, 211);
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  outline: none;
+  border-radius: 4px;
+  border: 0;
+  cursor: pointer;
+}
+
+.button-blue:hover {
+  background-color: rgb(104, 162, 202);
+}
+
+.button-blue:active {
+  background-color: rgb(130, 179, 211);
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button-green {
+  background-color: rgb(125, 181, 79);
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  outline: none;
+  border-radius: 4px;
+  border: 0;
+  cursor: pointer;
+}
+
+.button-green:hover {
+  background-color: rgb(108, 158, 66);
+}
+
+.button-green:active {
+  background-color: rgb(125, 181, 79);
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button-transparent {
+  background-color: rgba(0, 0, 0, 0);
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  outline: none;
+  border-radius: 4px;
+  border: 3px solid rgba(0, 0, 0, 0);
+  cursor: pointer;
+}
+
+.button-transparent:hover {
+  opacity: 0.6000000238418579;
+}
+
+.button-transparent:active {
+  border: 3px solid #83B3D3;
 }
 
 /* Плюсы Седоны */
@@ -251,8 +329,8 @@ body{
   width: 100%;
   text-align: center;
 
-  color: #FFFFFF;
-  background-color: #82B3D3;
+  color: rgb(255, 255, 255);
+  background-color: rgb(130, 179, 211);
 }
 
 .advantages-item-wide-reverse {
@@ -361,8 +439,8 @@ body{
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  color: #FFFFFF;
-  background-color: #756157;
+  color: rgb(255, 255, 255);
+  background-color: rgb(117, 97, 87);
 }
 
 
@@ -373,16 +451,20 @@ body{
   padding-bottom: 104px;
   padding-left: 258px;
 
-
   background-color: rgba(131, 179, 211, 0.12);
   background-image: url("../images/subscribe-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  color: #FFFFFF;
+  color: rgb(255, 255, 255);
 }
 
 .newsletter-form {
   display: flex;
+  border: 0;
+}
+
+.newsletter-email {
+  border: 0;
 }
 
 .newsletter-heading {
@@ -396,10 +478,12 @@ body{
 .field {
   padding: 14px 20px;
   flex-grow: 1;
+  background-color: rgb(242, 242, 242);
+  color: rgb(0, 0, 0);
+  border: 0;
+  border-radius: 4px 0 0 4px;
 
   font-size: 18px;
-  background-color: #FFFFFF;
-  color: #000000;
 }
 
 .newsletter-button {
@@ -408,8 +492,12 @@ body{
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
-  background-color: #82B3D3;
-  color: #FFFFFF;
+
+  background-color: rgb(130, 179, 211);
+  color: rgb(255, 255, 255);
+  padding: 8px 50px;
+  border-radius: 0 4px 4px 0;
+  border: 0;
 }
 
 
@@ -424,7 +512,7 @@ body{
   padding-bottom: 30px;
   padding-left: 70px;
   width: 1200px;
-  background-color: #FFFFFF;
+  background-color: rgb(255, 255, 255);
 }
 
 .socials-list {
@@ -458,15 +546,11 @@ body{
 }
 
 .socials-link:hover svg path{
-  fill: #68A2CA;
-}
-
-.socials-link:focus svg path {
-  fill: #68A2CA;
+  fill: rgb(104, 162, 202);
 }
 
 .socials-link:active {
-  fill: #68A2CA;
+  fill: rgb(104, 162, 202);
   fill-opacity: 0.3;
 }
 
@@ -480,11 +564,11 @@ body{
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  color: #000000;
+  color: rgb(0, 0, 0);
 }
 
 .page-footer-address-phone:hover {
-  color: #756157;
+  color: rgb(117, 97, 87);
 }
 
 .page-footer-address-phone:active {
@@ -497,7 +581,7 @@ body{
 }
 
 .page-footer-logo:hover svg path {
-  fill: #756157;
+  fill: rgb(117, 97, 87);
 }
 
 .page-footer-logo:active svg path {
@@ -509,6 +593,7 @@ body{
 /* Фильтр каталога */
 .inner-header-title {
   margin: 0;
+  margin-bottom: 8px;
 
   font-weight: 700;
   font-size: 60px;
@@ -523,7 +608,7 @@ body{
   background-image: url("../images/filter-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  color: #FFFFFF;
+  color: rgb(255, 255, 255);
 }
 
 .filter-wrapper-right {
@@ -535,6 +620,7 @@ body{
   display: flex;
 
   margin: 0;
+  margin-bottom: 40px;
   padding: 0;
   list-style: none;
 }
@@ -546,7 +632,7 @@ body{
 
   font-size: 16px;
   text-decoration: none;
-  color: #FFFFFF;
+  color: rgb(255, 255, 255);
 }
 
 .catalog-filter {
@@ -554,14 +640,29 @@ body{
   justify-content: space-between;
 }
 
+.catalog-filter-wrapper {
+  display: flex;
+}
+
 .catalog-filter-group-left {
   margin-right: 70px;
+}
+
+.catalog-filter-group-right {
+  margin-left: 70px;
+}
+
+.catalog-filter-group {
+  border: none;
+  padding: 0;
 }
 
 .catalog-filter-title {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
+
+  margin-bottom: 32px;
 }
 
 .catalog-filter-list {
@@ -573,7 +674,52 @@ body{
 .catalog-filter-buttons {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
+}
+
+.price-control-inputs {
+  display: flex;
+}
+
+.price-control-input-wrapper {
+  position: relative;
+}
+
+.price-control-input {
+  background-color: rgb(242, 242, 242);
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 0;
+  max-width: 143px;
+
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.price-control-input:hover {
+  background-color: rgb(230, 230, 230);
+}
+
+/* .price-control-input:focus {
+  border: 3px solid rgb(131, 179, 211);
+} */
+
+.price-min-control-input {
+  border-radius: 4px 0 0 4px;
+  margin-right: 2px;
+}
+
+.price-max-control-input {
+  border-radius: 0 4px 4px 0;
+}
+
+.price-control-input-span {
+  position: absolute;
+  left: 100px;
+  top: 12px;
+  color: rgb(0, 0, 0);
+  opacity: 0.30000001192092896;
 }
 
 .button-submit {
@@ -582,13 +728,11 @@ body{
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
-  background-color: #82B3D3;
-  color: #FFFFFF;
-  border-radius: 4px;
-  border-color: #82B3D3;
+  background-color: rgb(130, 179, 211);
+  color: rgb(255, 255, 255);
+  border: 0;
 
   padding: 8px 50px;
-  margin-bottom: 32px;
 }
 
 .button-reset {
@@ -597,9 +741,8 @@ body{
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
-  color: #FFFFFF;
-  border-radius: 4px;
 
+  margin-top: 32px;
   padding: 8px 50px;
 }
 
@@ -624,6 +767,9 @@ body{
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+
+  display: flex;
+  align-items: center;
 }
 
 .select-control {
@@ -632,12 +778,29 @@ body{
   line-height: 21px;
   align-self: center;
 
+  width: 292px;
   margin-left: auto;
-  padding: 14px 20px;
+  padding: 10px 20px;
+  border-radius: 4px;
+  color: rgb(51, 51, 51);
+  border: 2px solid rgb(229, 229, 229);
+}
+
+.select-control:hover {
+  border: 2px solid rgb(104, 162, 202);
+}
+
+.select-control:active {
+  border: 2px solid rgb(63, 94, 114);
+}
+
+.select-control:disabled {
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  color: rgb(229, 229, 229);
 }
 
 .select-control-option {
-  color: #333333;
+  color: rgb(51, 51, 51);
 }
 
 .catalog-view-list {
@@ -651,18 +814,22 @@ body{
 }
 
 .catalog-view-item {
-  border: 1px solid black;
+  margin-right: 8px;
+}
+
+.view-button {
+  border: 2px solid rgb(229, 229, 229);
   min-width: 20px;
   border-radius: 4px;
+  padding: 14px 12px;
 
-  margin-right: 8px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.view-button {
-  padding: 12px;
+.view-button:hover, .view-button:active, .view-button-current {
+  border: 2px solid rgb(0, 0, 0);
 }
 
 .catalog-view-item:last-child {
@@ -690,7 +857,7 @@ body{
 
   padding: 20px;
   border-radius: 4px;
-  border: 1px solid #E6E6E6;
+  border: 1px solid rgb(230, 230, 230);
 }
 
 .hotel-card-image {
@@ -701,14 +868,14 @@ body{
 
 .hotel-card-link {
   text-decoration: none;
-  color: #000000;
+  color: rgb(0, 0, 0);
 }
 
 .hotel-card-link-title {
   grid-column: 1 / span 2;
 
   text-decoration: none;
-  color: #000000;
+  color: rgb(0, 0, 0);
 }
 
 .hotel-card-title {
@@ -721,7 +888,7 @@ body{
 }
 
 .hotel-card-desc {
-  color: #333333;
+  color: rgb(51, 51, 51);
 }
 
 .hotel-card-desc-housing-type {
@@ -752,7 +919,7 @@ body{
 }
 
 .hotel-card-rating {
-  background-color: #F2F2F2;
+  background-color: rgb(242, 242, 242);
   padding: 8px 16px;
   margin: 0;
 
@@ -774,30 +941,14 @@ body{
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: rgb(255, 255, 255);
 }
-
-.hotel-card-more {
-  background-color: #756157;
-  text-decoration: none;
-}
-
-.hotel-card-button-favourite {
-  background-color: #82B3D3;
-  text-decoration: none;
-}
-
-.hotel-card-button-favourite.favourite {
-  background-color: #7DB54F;
-  text-decoration: none;
-}
-
 
 /* Блок подписки на странице каталога */
 .catalog-newsletter {
   background-image: none;
-  background-color: #FFFFFF;
-  color: #000000;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
 }
 
 
@@ -841,18 +992,18 @@ body{
 
 .pagination-link:active {
   color: rgba(255, 255, 255, 0.3);
-  background-color: #82B3D3;
+  background-color: rgb(130, 179, 211);
 }
 
 .pagination-link.pagination-three-dots {
   background-color: rgb(255, 255, 255);
-  color: #000000;
+  color: rgb(0, 0, 0);
 }
 
 .pagination-link.pagination-current {
   text-align: center;
   text-transform: uppercase;
-  color: #000000;
+  color: rgb(0, 0, 0);
   text-decoration: none;
   background: rgb(242, 242, 242);
 }
