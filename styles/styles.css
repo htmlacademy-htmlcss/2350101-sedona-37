@@ -145,7 +145,7 @@ body{
 .favourites-amount {
   position: absolute;
   top: 10px;
-  left: 20px;
+  left: 19px;
   box-sizing: border-box;
   padding: 5px;
 
@@ -156,7 +156,6 @@ body{
   background-color: rgb(125, 181, 79);
   min-width: 20px;
   min-height: 20px;
-  border: 1px solid rgb(0, 0, 0);
   border-radius: 50%;
   font-size: 10px;
   line-height: 10px;
@@ -648,6 +647,21 @@ body{
   list-style: none;
 }
 
+.breadcrumbs-item {
+  margin-right: 20px;
+  position: relative;
+}
+
+.breadcrumbs-item:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 30%;
+  right: -14px;
+  background-image: url("../images/arrow-to-right.svg");
+  width: 7px;
+  height: 10px;
+}
+
 .breadcrumbs-link {
   display: block;
   min-width: 13px;
@@ -656,6 +670,14 @@ body{
   font-size: 16px;
   text-decoration: none;
   color: rgb(255, 255, 255);
+}
+
+.breadcrumbs-link:hover {
+
+}
+
+.breadcrumbs-link:active {
+
 }
 
 .catalog-filter {
@@ -845,13 +867,22 @@ body{
   min-width: 20px;
   border-radius: 4px;
   padding: 14px 12px;
+  box-sizing: border-box;
 
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.view-button:hover, .view-button:active, .view-button-current {
+.view-button:hover, .view-button-current {
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.view-button:focus {
+  border: 2px solid rgb(104, 162, 202);
+}
+
+.view-button:active {
   border: 2px solid rgb(0, 0, 0);
 }
 
