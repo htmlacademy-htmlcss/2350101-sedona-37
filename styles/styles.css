@@ -78,7 +78,7 @@ body{
   flex-wrap: wrap;
 
   margin: 0;
-  margin-left: 40px;
+  margin-left: 28px;
   padding: 0;
   list-style: none;
   max-width: 500px;
@@ -678,7 +678,7 @@ body{
 }
 
 .breadcrumbs-item {
-  margin-right: 20px;
+  margin-right: 28px;
   position: relative;
   display: flex;
   align-items: flex-end;
@@ -688,7 +688,7 @@ body{
   content: "";
   position: absolute;
   top: 30%;
-  right: -14px;
+  right: -16px;
   background-image: url("../images/arrow-to-right.svg");
   width: 7px;
   height: 10px;
