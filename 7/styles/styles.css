@@ -50,12 +50,9 @@ body{
   overflow: hidden;
 }
 
-:disabled {
-  background-color: rgb(229, 229, 229);
-  color: rgb(255, 255, 255);
-}
 
 /*Header*/
+
 .page-header {
   background: rgb(255, 255, 255);
   font-weight: 700;
@@ -67,7 +64,7 @@ body{
 
 .navigation {
   display: flex;
-  margin-left: 50px;
+  margin-left: 70px;
 }
 
 .navigation-sedona-logo {
@@ -81,7 +78,7 @@ body{
   flex-wrap: wrap;
 
   margin: 0;
-  margin-left: 40px;
+  margin-left: 28px;
   padding: 0;
   list-style: none;
   max-width: 500px;
@@ -103,7 +100,7 @@ body{
   max-width: 350px;
 }
 
-.navigation-link{
+.navigation-link {
   position: relative;
 
   padding: 20px 16px;
@@ -112,6 +109,14 @@ body{
   text-decoration: none;
   background: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
+}
+
+.navigation-link:hover {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.navigation-link:active {
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .navigation-link.current::before {
@@ -200,7 +205,7 @@ body{
 
 .advantages-start-wrapper {
   padding: 69px 274px;
-  margin-bottom: 20px;
+  margin-bottom: 21px;
 }
 
 .advantages-end-wrapper {
@@ -213,12 +218,27 @@ body{
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
+
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
 }
 
 .desc {
   font-size: 22px;
   line-height: 26px;
   text-align: center;
+}
+
+.desc-search {
+  margin: 0;
+  margin-bottom: 54px;
+  padding: 0;
+}
+
+.button-brown:disabled, .button-blue:disabled, .button-green:disabled {
+  background-color: rgb(229, 229, 229);
+  color: rgb(255, 255, 255);
 }
 
 .button-brown {
@@ -283,8 +303,8 @@ body{
   color: rgb(255, 255, 255);
   text-decoration: none;
   outline: none;
+  border: none;
   border-radius: 4px;
-  border: 3px solid rgba(0, 0, 0, 0);
   cursor: pointer;
 }
 
@@ -293,7 +313,7 @@ body{
 }
 
 .button-transparent:active {
-  border: 3px solid #83B3D3;
+  outline: 3px solid #83B3D3;
 }
 
 /* Плюсы Седоны */
@@ -495,6 +515,16 @@ body{
   line-height: 28px;
   text-align: center;
   text-transform: uppercase;
+
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+}
+
+.newsletter-desc {
+  margin: 0;
+  margin-bottom: 54px;
+  padding: 0;
 }
 
 .field {
@@ -648,22 +678,23 @@ body{
 }
 
 .breadcrumbs-item {
-  margin-right: 20px;
+  margin-right: 28px;
   position: relative;
+  display: flex;
+  align-items: flex-end;
 }
 
 .breadcrumbs-item:not(:last-child)::after {
   content: "";
   position: absolute;
   top: 30%;
-  right: -14px;
+  right: -16px;
   background-image: url("../images/arrow-to-right.svg");
   width: 7px;
   height: 10px;
 }
 
 .breadcrumbs-link {
-  display: block;
   min-width: 13px;
   min-height: 13px;
 
@@ -673,11 +704,19 @@ body{
 }
 
 .breadcrumbs-link:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
 
+.breadcrumbs-link:hover svg path{
+  fill: rgba(255, 255, 255, 0.6);
 }
 
 .breadcrumbs-link:active {
+  color: rgba(255, 255, 255, 0.3);
+}
 
+.breadcrumbs-link:active svg path{
+  fill: rgba(255, 255, 255, 0.3);
 }
 
 .catalog-filter {
@@ -689,7 +728,14 @@ body{
   display: flex;
 }
 
+.catalog-filter-group {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
 .catalog-filter-group-left {
+  margin-left: 0;
   margin-right: 70px;
 }
 
@@ -697,16 +743,12 @@ body{
   margin-left: 70px;
 }
 
-.catalog-filter-group {
-  border: none;
-  padding: 0;
-}
-
 .catalog-filter-title {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
 
+  padding: 0;
   margin-bottom: 32px;
 }
 
@@ -714,6 +756,10 @@ body{
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.catalog-filter-item:not(:last-child) {
+  margin-bottom: 16px;
 }
 
 .catalog-filter-buttons {
@@ -724,6 +770,7 @@ body{
 
 .price-control-inputs {
   display: flex;
+  margin-bottom: 36px;
 }
 
 .price-control-input-wrapper {
@@ -735,6 +782,7 @@ body{
   padding: 12px 20px;
   box-sizing: border-box;
   border: none;
+  outline: 0;
   max-width: 143px;
 
   font-size: 18px;
@@ -744,11 +792,12 @@ body{
 
 .price-control-input:hover {
   background-color: rgb(230, 230, 230);
+  outline: 0;
 }
 
-/* .price-control-input:focus {
-  border: 3px solid rgb(131, 179, 211);
-} */
+.price-control-input:focus {
+  outline: 3px solid rgb(131, 179, 211);
+}
 
 .price-min-control-input {
   border-radius: 4px 0 0 4px;
@@ -765,6 +814,13 @@ body{
   top: 12px;
   color: rgb(0, 0, 0);
   opacity: 0.30000001192092896;
+}
+
+.acceptable-price-min, .acceptable-price-max {
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  background-color: rgb(255, 255, 255);
 }
 
 .button-submit {
