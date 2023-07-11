@@ -152,7 +152,7 @@ body{
   top: 10px;
   left: 19px;
   box-sizing: border-box;
-  padding: 5px;
+  padding: 4px;
 
   display: flex;
   justify-content: center;
@@ -341,8 +341,28 @@ body{
   text-transform: uppercase;
 }
 
+.advantages-title::after {
+  content: "";
+  display: block;
+  margin: 30px auto 0;
+  background-color: rgba(0, 0, 0, 0.30);
+  width: 60px;
+  height: 2px;
+}
+
+.advantages-item-wide .advantages-title::after {
+  content: "";
+  display: block;
+  margin: 30px auto 0;
+  background-color: rgba(255, 255, 255, 0.30);
+  width: 60px;
+  height: 2px;
+}
+
 .advantage-description {
   text-align: center;
+  margin: 0;
+  margin-top: 30px;
 }
 
 .advantage-image {
@@ -418,42 +438,36 @@ body{
 
   margin: 0;
   margin-bottom: 30px;
-  position: relative;
 }
 
 .services-title-housing::before {
   content: "";
   background-image: url("../images/housing.svg");
   background-repeat: no-repeat;
+  display: block;
+  margin: 0 auto 30px;
   width: 76px;
   height: 72px;
-
-  position: absolute;
-  top: -102px;
 }
 
 .services-title-food::before {
   content: "";
   background-image: url("../images/food.svg");
   background-repeat: no-repeat;
+  display: block;
+  margin: 0 auto 30px;
   width: 75px;
   height: 70px;
-
-  position: absolute;
-  top: -100px;
-  left: -13px;
 }
 
 .services-title-souvenir::before {
   content: "";
   background-image: url("../images/souvenir.svg");
   background-repeat: no-repeat;
+  display: block;
+  margin: 0 auto 30px;
   width: 69px;
   height: 76px;
-
-  position: absolute;
-  top: -106px;
-  right: 22px;
 }
 
 .service-description {
@@ -668,6 +682,240 @@ body{
   margin-left: auto;
 }
 
+.catalog-filter {
+  display: flex;
+  justify-content: space-between;
+}
+
+.catalog-filter-wrapper {
+  display: flex;
+}
+
+.catalog-filter-group {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.catalog-filter-group-left {
+  margin-left: 0;
+  margin-right: 70px;
+}
+
+.catalog-filter-group-right {
+  margin-left: 70px;
+}
+
+.catalog-filter-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+
+  padding: 0;
+  margin-bottom: 32px;
+}
+
+.catalog-filter-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.catalog-filter-item {
+  display: flex;
+}
+
+.catalog-filter-item:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.control {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  line-height: 23px;
+}
+
+.control:hover {
+  opacity: 0.6;
+}
+
+.control-input[type="checkbox"] {
+  appearance: none;
+  background-color: rgb(255, 255, 255);
+  border-radius: 4px;
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  margin-right: 16px;
+  cursor: pointer;
+}
+
+.control-input[type="checkbox"]:checked {
+  background-image: url("../images/tick.svg");
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+}
+
+.control-input[type="checkbox"]:active {
+  outline: 2px solid rgb(131, 179, 211);
+}
+
+.control-input[type="radio"] {
+  appearance: none;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  margin-right: 16px;
+  cursor: pointer;
+}
+
+.control-input[type="radio"]:checked {
+  background-image: url("../images/dot.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.catalog-filter-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.price-control-inputs {
+  display: flex;
+  margin-bottom: 36px;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input[type='number'],
+input[type="number"]:hover,
+input[type="number"]:focus {
+    appearance: none;
+    -moz-appearance: textfield;
+}
+
+.price-control-input {
+  background-color: rgb(242, 242, 242);
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: none;
+  outline: 0;
+  max-width: 143px;
+
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.price-control-input:hover {
+  background-color: rgb(230, 230, 230);
+  outline: 0;
+}
+
+.price-control-input:focus {
+  outline: 3px solid rgb(131, 179, 211);
+}
+
+.price-min-control-input {
+  border-radius: 4px 0 0 4px;
+  margin-right: 2px;
+}
+
+.price-max-control-input {
+  border-radius: 0 4px 4px 0;
+}
+
+.price-control-input-label {
+  position: relative;
+}
+
+.price-control-input-span {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 20px;
+  color: rgb(0, 0, 0);
+  opacity: 0.30000001192092896;
+}
+
+
+/* Слайдер для цены */
+
+.range-scale {
+  position: relative;
+  width: 287px;
+  height: 4px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.range-bar {
+  position: absolute;
+  height: 4px;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.range-toggle {
+  position: absolute;
+  top: -8px;
+  width: 20px;
+  height: 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.range-toggle:focus {
+  outline: 3px solid rgb(131, 179, 211);
+}
+
+.range-toggle:active {
+  outline: 2px solid rgb(131, 179, 211);
+}
+
+.toggle-min {
+  left: 0;
+}
+
+.toggle-max {
+  right: 0;
+}
+
+.button-submit {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: rgb(130, 179, 211);
+  color: rgb(255, 255, 255);
+  border: none;
+
+  padding: 8px 50px;
+}
+
+.button-reset {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+
+  margin-top: 32px;
+  padding: 8px 50px;
+}
+
+
+/* Хлебные крошки в каталоге */
+
 .breadcrumbs-list {
   display: flex;
 
@@ -719,133 +967,6 @@ body{
   fill: rgba(255, 255, 255, 0.3);
 }
 
-.catalog-filter {
-  display: flex;
-  justify-content: space-between;
-}
-
-.catalog-filter-wrapper {
-  display: flex;
-}
-
-.catalog-filter-group {
-  border: none;
-  margin: 0;
-  padding: 0;
-}
-
-.catalog-filter-group-left {
-  margin-left: 0;
-  margin-right: 70px;
-}
-
-.catalog-filter-group-right {
-  margin-left: 70px;
-}
-
-.catalog-filter-title {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 24px;
-
-  padding: 0;
-  margin-bottom: 32px;
-}
-
-.catalog-filter-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.catalog-filter-item:not(:last-child) {
-  margin-bottom: 16px;
-}
-
-.catalog-filter-buttons {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-}
-
-.price-control-inputs {
-  display: flex;
-  margin-bottom: 36px;
-}
-
-.price-control-input-wrapper {
-  position: relative;
-}
-
-.price-control-input {
-  background-color: rgb(242, 242, 242);
-  padding: 12px 20px;
-  box-sizing: border-box;
-  border: none;
-  outline: 0;
-  max-width: 143px;
-
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 24px;
-}
-
-.price-control-input:hover {
-  background-color: rgb(230, 230, 230);
-  outline: 0;
-}
-
-.price-control-input:focus {
-  outline: 3px solid rgb(131, 179, 211);
-}
-
-.price-min-control-input {
-  border-radius: 4px 0 0 4px;
-  margin-right: 2px;
-}
-
-.price-max-control-input {
-  border-radius: 0 4px 4px 0;
-}
-
-.price-control-input-span {
-  position: absolute;
-  left: 100px;
-  top: 12px;
-  color: rgb(0, 0, 0);
-  opacity: 0.30000001192092896;
-}
-
-.acceptable-price-min, .acceptable-price-max {
-  width: 20px;
-  height: 20px;
-  border-radius: 4px;
-  background-color: rgb(255, 255, 255);
-}
-
-.button-submit {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  text-align: center;
-  text-transform: uppercase;
-  background-color: rgb(130, 179, 211);
-  color: rgb(255, 255, 255);
-  border: none;
-
-  padding: 8px 50px;
-}
-
-.button-reset {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  text-align: center;
-  text-transform: uppercase;
-
-  margin-top: 32px;
-  padding: 8px 50px;
-}
 
 /* Каталог отелей */
 /* Header каталога */
@@ -882,9 +1003,14 @@ body{
   width: 292px;
   margin-left: auto;
   padding: 10px 20px;
+  border: 2px solid rgb(229, 229, 229);
   border-radius: 4px;
   color: rgb(51, 51, 51);
-  border: 2px solid rgb(229, 229, 229);
+
+  appearance: none;
+  background-image: url(../images/arrow-to-bottom.svg);
+  background-repeat: no-repeat;
+  background-position: right 20px center;
 }
 
 .select-control:hover {

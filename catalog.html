@@ -111,18 +111,25 @@
                 <fieldset class="catalog-filter-group catalog-filter-group-price">
                   <legend class="catalog-filter-title">Стоимость, ₽:</legend>
                   <div class="price-control-inputs">
-                    <div class="price-control-input-wrapper">
-                      <input class="price-control-input price-min-control-input" type="text" value="0">
+                    <label class="price-control-input-label">
+                      <input class="price-control-input price-min-control-input" type="number" value="0">
                       <span class="price-control-input-span">от</span>
-                    </div>
-                    <div class="price-control-input-wrapper">
-                      <input class="price-control-input price-max-control-input" type="text" value="9000">
+                    </label>
+                    <label class="price-control-input-label">
+                      <input class="price-control-input price-max-control-input" type="number" value="9000">
                       <span class="price-control-input-span">до</span>
-                    </div>
+                    </label>
                   </div>
-                  <div class="acceptable-price-range">
-                    <button class="acceptable-price-min" type="button"></button>
-                    <button class="acceptable-price-max" type="button"></button>
+                  <div class="range">
+                    <div class="range-scale">
+                      <div class="range-bar" style="left: 0; width: 226px;">
+                        <span class="visually-hidden">Изменить минимальную цену.</span>
+                        <button class="range-toggle toggle-min" type="button"></button>
+                        <span class="visually-hidden">Изменить максимальную цену.</span>
+                        <button class="range-toggle toggle-max" type="button"></button>
+                      </div>
+                    </div>
+
                   </div>
                 </fieldset>
                 <div class="catalog-filter-buttons catalog-filter-group-right">
@@ -148,7 +155,7 @@
                 <span class="visually-hidden">Показать карточки</span>
                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14" fill="none"><g fill="#000" clip-path="url(#a)">
                   <path d="M4 0H0v6h4V0ZM16 0h-4v6h4V0ZM10 0H6v6h4V0ZM4 8H0v6h4V8ZM16 8h-4v6h4V8ZM10 8H6v6h4V8Z"/></g>
-                  <defs><clipPath id="a"><path fill="#fff" d="M0 0h16v14H0z"/></clipPath></defs>
+                  <defs><path fill="#fff" d="M0 0h16v14H0z"/></defs>
                 </svg>
               </a>
             </li>
@@ -157,7 +164,7 @@
                 <span class="visually-hidden">Показать слайдер</span>
                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14" fill="none"><g fill="#000" clip-path="url(#a)">
                   <path d="M16 12H0v2h16v-2ZM14 2v6H2V2h12Zm2-2H0v10h16V0Z"/></g>
-                  <defs><clipPath id="a"><path fill="#fff" d="M0 0h16v14H0z"/></clipPath></defs>
+                  <defs><path fill="#fff" d="M0 0h16v14H0z"/></defs>
                 </svg>
               </a>
             </li>
@@ -166,7 +173,7 @@
                 <span class="visually-hidden">Показать список</span>
                 <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14" fill="none"><g fill="#000" clip-path="url(#a)">
                   <path d="M2 0H0v2h2V0ZM16 0H4v2h12V0ZM2 4H0v2h2V4ZM16 4H4v2h12V4ZM2 8H0v2h2V8ZM16 8H4v2h12V8ZM2 12H0v2h2v-2ZM16 12H4v2h12v-2Z"/></g>
-                  <defs><clipPath id="a"><path fill="#fff" d="M0 0h16v14H0z"/></clipPath></defs>
+                  <defs><path fill="#fff" d="M0 0h16v14H0z"/></defs>
                 </svg>
               </a>
             </li>
