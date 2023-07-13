@@ -158,6 +158,7 @@
         <header class="modal-header">
           <h2 class="modal-heading">Поиск гостиницы в Седоне</h1>
           <button class="modal-close-button">
+            <!-- <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="none" viewBox="0 0 15 15"><path fill="#000" d="M14.5 1.78 13.2.5 7.49 6.2 1.79.5.48 1.8l5.7 5.7-5.7 5.7 1.3 1.3 5.7-5.7 5.7 5.7 1.3-1.3-5.7-5.7 5.7-5.7Z"/></svg> -->
             <span class="visually-hidden">Закрыть</span>
           </button>
         </header>
@@ -165,12 +166,12 @@
           <form method="post" action="" class="modal-content">
             <div class="modal-content-wrapper input-date-wrapper">
             <label for="input-arrival" class="input-label input-label-date">Дата заезда:</label>
-            <input type="text" id="input-arrival" value="27 апреля 2020" class="modal-input input-date">
+            <input type="text" id="input-arrival" placeholder="Укажите дату" value="27 апреля 2020" class="modal-input input-date">
             <p class="input-description alert-description">Мы не можем отправить вас в прошлое.</p>
             </div>
             <div class="modal-content-wrapper input-date-wrapper">
               <label for="input-departure" class="input-label input-label-date">Дата выезда:</label>
-              <input type="text" id="input-departure" value="1 сентября 2023" class="modal-input input-date">
+              <input type="text" id="input-departure" placeholder="Укажите дату" value="1 сентября 2023" class="modal-input input-date">
               <p class="input-description">На эти даты есть свободные номера. Пока есть.</p>
             </div>
             <div class="modal-content-wrapper input-people-amount">
@@ -179,7 +180,7 @@
               <label for="input-amount-children" class="input-label input-label-children">Дети:</label>
               <input type="number" id="input-amount-children" value="2" class="modal-input input-amount input-amount-children">
             </div>
-            <button class="modal-button">Найти</button>
+            <button class="modal-button button-blue">Найти</button>
           </form>
         </section>
       </div>
