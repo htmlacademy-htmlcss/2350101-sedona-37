@@ -205,7 +205,6 @@ body{
 
 .advantages-start-wrapper {
   padding: 69px 274px;
-  margin-bottom: 21px;
 }
 
 .advantages-end-wrapper {
@@ -541,6 +540,7 @@ body{
 }
 
 .newsletter-desc {
+  color: rgb(255, 255, 255);
   margin: 0;
   margin-bottom: 54px;
   padding: 0;
