@@ -227,7 +227,9 @@ body{
 .desc {
   font-size: 22px;
   line-height: 26px;
+  color: rgb(51, 51, 51);
   text-align: center;
+  margin: 0;
 }
 
 .desc-search {
@@ -242,6 +244,7 @@ body{
 }
 
 .button-brown {
+  font-family: inherit;
   background-color: rgb(117, 97, 87);
   color: rgb(255, 255, 255);
   text-decoration: none;
@@ -261,6 +264,7 @@ body{
 }
 
 .button-blue {
+  font-family: inherit;
   background-color: rgb(130, 179, 211);
   color: rgb(255, 255, 255);
   text-decoration: none;
@@ -280,6 +284,7 @@ body{
 }
 
 .button-green {
+  font-family: inherit;
   background-color: rgb(125, 181, 79);
   color: rgb(255, 255, 255);
   text-decoration: none;
@@ -787,7 +792,7 @@ body{
 
 .price-control-inputs {
   display: flex;
-  margin-bottom: 36px;
+  margin-bottom: 44px;
 }
 
 .price-control-input::-webkit-outer-spin-button,
@@ -799,6 +804,7 @@ body{
 }
 
 .price-control-input {
+  font-family: inherit;
   background-color: rgb(242, 242, 242);
   padding: 12px 20px;
   box-sizing: border-box;
@@ -886,6 +892,7 @@ body{
 }
 
 .button-submit {
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -899,6 +906,7 @@ body{
 }
 
 .button-reset {
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -1323,6 +1331,7 @@ body{
 }
 
 .modal-input {
+  font-family: inherit;
   cursor: pointer;
   border: none;
   outline: none;
