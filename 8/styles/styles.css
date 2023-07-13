@@ -556,6 +556,7 @@ body{
   background-color: rgb(242, 242, 242);
   color: rgb(0, 0, 0);
   border: none;
+  outline: none;
   border-radius: 4px 0 0 4px;
 
   font-size: 18px;
