@@ -1,6 +1,8 @@
-/* * {
-  outline: 1px solid green;
-} */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
 /* Подключение шрифтов */
 @font-face {
@@ -167,7 +169,6 @@ body{
   position: absolute;
   top: 10px;
   left: 19px;
-  box-sizing: border-box;
   padding: 4px;
 
   display: flex;
@@ -346,10 +347,6 @@ body{
   list-style: none;
 }
 
-.advantages-item {
-  box-sizing: border-box;
-}
-
 .advantages-title {
   margin: 0 auto;
   width: 175px;
@@ -394,7 +391,6 @@ body{
   display: flex;
   flex-direction: column ;
   justify-content: center;
-  box-sizing: border-box;
   text-align: center;
 
   width: 400px;
@@ -407,7 +403,6 @@ body{
 .advantages-item-wide {
   display: flex;
   flex-wrap: wrap;
-  box-sizing: border-box;
   width: 100%;
   text-align: center;
 
@@ -438,7 +433,6 @@ body{
 }
 
 .services-item {
-  box-sizing: border-box;
   padding: 80px 85px;
   min-height: 385px;
   min-width: 400px;
@@ -597,8 +591,6 @@ body{
 .page-footer {
   display: flex;
   justify-content: space-between;
-
-  box-sizing: border-box;
   padding-top: 40px;
   padding-right: 70px;
   padding-bottom: 30px;
@@ -631,8 +623,6 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
-
-  box-sizing: border-box;
   height: 40px;
   width: 47px;
 }
@@ -828,7 +818,6 @@ body{
   font-family: inherit;
   background-color: rgb(242, 242, 242);
   padding: 12px 20px;
-  box-sizing: border-box;
   border: none;
   outline: 0;
   max-width: 143px;
@@ -1074,7 +1063,6 @@ body{
   min-width: 20px;
   border-radius: 4px;
   padding: 14px 12px;
-  box-sizing: border-box;
 
   display: flex;
   justify-content: center;
@@ -1235,7 +1223,6 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  box-sizing: border-box;
   padding: 0 12px;
   min-width: 60px;
   height: 60px;
@@ -1295,7 +1282,6 @@ body{
 }
 
 .modal-reserve {
-  box-sizing: border-box;
   width: 717px;
   min-height: 576px;
   border-radius: 30px;
@@ -1426,7 +1412,6 @@ body{
   appearance: none;
   text-align: center;
   line-height: 20px;
-  box-sizing: border-box;
   padding: 14px 10px;
   width: 51px;
 }
