@@ -52,6 +52,9 @@ body{
   overflow: hidden;
 }
 
+img {
+  object-fit: contain;
+}
 
 /*Header*/
 
@@ -132,6 +135,7 @@ body{
 }
 
 .navigation-user-link {
+  box-sizing: content-box;
   display: block;
   width: 20px;
   height: 20px;
