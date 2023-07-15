@@ -78,6 +78,14 @@ img {
   z-index: 1;
 }
 
+.navigation-sedona-logo:hover {
+  opacity: 0.7;
+}
+
+.navigation-sedona-logo:active {
+  opacity: 0.5;
+}
+
 .navigation-list {
   display: flex;
   flex-wrap: wrap;
@@ -258,11 +266,6 @@ img {
   padding: 0;
 }
 
-.button-brown:disabled, .button-blue:disabled, .button-green:disabled {
-  background-color: rgb(229, 229, 229);
-  color: rgb(255, 255, 255);
-}
-
 .button-brown {
   font-family: inherit;
   background-color: rgb(117, 97, 87);
@@ -339,6 +342,16 @@ img {
 
 .button-transparent:active {
   outline: 3px solid #83B3D3;
+}
+
+.button-brown:disabled, .button-blue:disabled, .button-green:disabled {
+  background-color: rgb(229, 229, 229);
+  color: rgb(255, 255, 255);
+}
+
+.button-transparent:disabled {
+  outline: none;
+  opacity: 0.1;
 }
 
 /* Плюсы Седоны */
@@ -564,7 +577,7 @@ img {
   color: rgb(51, 51, 51);
 }
 
-.field {
+.field[type="email"] {
   padding: 14px 20px;
   flex-grow: 1;
   background-color: rgb(242, 242, 242);
@@ -574,6 +587,19 @@ img {
   border-radius: 4px 0 0 4px;
 
   font-size: 18px;
+}
+
+.field[type="email"]:hover {
+  background-color: rgb(230, 230, 230);
+  outline: 0;
+}
+
+.field[type="email"]:focus {
+  outline: 3px solid rgb(131, 179, 211);
+}
+
+.field[type="email"]:active {
+  outline: 2px solid rgb(131, 179, 211);
 }
 
 .newsletter-button {
@@ -800,6 +826,7 @@ img {
 }
 
 .catalog-filter-buttons {
+  margin-top: 56px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -821,7 +848,7 @@ img {
 .price-control-input {
   font-family: inherit;
   background-color: rgb(242, 242, 242);
-  padding: 12px 20px;
+  padding: 12px 44px 12px 20px;
   border: none;
   outline: 0;
   max-width: 143px;
