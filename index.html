@@ -162,13 +162,14 @@
     <div class="modal-container">
       <div class="modal modal-reserve">
         <header class="modal-header">
-          <h2 class="modal-heading">Поиск гостиницы в Седоне</h1>
+          <h2 class="modal-heading">Поиск гостиницы в Седоне</h2>
           <button class="modal-close-button">
             <!-- <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="none" viewBox="0 0 15 15"><path fill="#000" d="M14.5 1.78 13.2.5 7.49 6.2 1.79.5.48 1.8l5.7 5.7-5.7 5.7 1.3 1.3 5.7-5.7 5.7 5.7 1.3-1.3-5.7-5.7 5.7-5.7Z"/></svg> -->
             <span class="visually-hidden">Закрыть</span>
           </button>
         </header>
         <section>
+          <h2 class="visually-hidden">Модальное окно. Бронирование.</h2>
           <form method="post" action="https://echo.htmlacademy.ru/" class="modal-content">
             <div class="modal-content-wrapper input-date-wrapper">
             <label for="input-arrival" class="input-label input-label-date">Дата заезда:</label>
@@ -183,15 +184,35 @@
             <div class="modal-content-wrapper input-people-amount">
               <label for="input-amount-adults" class="input-label input-label-adults">Взрослые:</label>
               <div class="input-amount-wrapper">
-                <button></button>
+                <button class="button-input-amount button-minus">
+                  <span class="visually-hidden">Минус.</span>
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 9V11H17V9H3Z" fill="#756157" fill-opacity="0.3"/>
+                  </svg>
+                </button>
                 <input type="number" id="input-amount-adults" value="2" class="modal-input input-amount input-amount-adults">
-                <button></button>
+                <button class="button-input-amount button-plus">
+                  <span class="visually-hidden">Плюс.</span>
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" fill="#756157" fill-opacity="0.3"/>
+                  </svg>
+                </button>
               </div>
               <label for="input-amount-children" class="input-label input-label-children">Дети:</label>
               <div class="input-amount-wrapper">
-                <button></button>
+                <button class="button-input-amount button-minus">
+                  <span class="visually-hidden">Минус.</span>
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 9V11H17V9H3Z" fill="#756157" fill-opacity="0.3"/>
+                  </svg>
+                </button>
                 <input type="number" id="input-amount-children" value="2" class="modal-input input-amount input-amount-children">
-                <button></button>
+                <button class="button-input-amount button-plus">
+                  <span class="visually-hidden">Плюс.</span>
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" fill="#756157" fill-opacity="0.3"/>
+                  </svg>
+                </button>
               </div>
             </div>
             <button class="modal-button button-blue">Найти</button>
