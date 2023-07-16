@@ -32,7 +32,7 @@ body{
   font-size: 18px;
   line-height: 21px;
   background: rgb(242, 242, 242);
-  color: rgb(0, 0, 0);
+  color: rgb(51, 51, 51);
 
   width: 1200px;
   margin: 0 auto;
@@ -60,6 +60,7 @@ img {
 
 .page-header {
   background: rgb(255, 255, 255);
+  color:rgb(0, 0, 0);
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -241,6 +242,7 @@ img {
 }
 
 .lead {
+  color: rgb(0, 0, 0);
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -250,6 +252,10 @@ img {
   margin: 0;
   margin-bottom: 20px;
   padding: 0;
+}
+
+.advantages-lead {
+  margin-bottom: 25px;
 }
 
 .desc {
@@ -373,6 +379,7 @@ img {
   line-height: 28px;
   text-align: center;
   text-transform: uppercase;
+  color: rgb(0, 0, 0);
 }
 
 .advantages-title::after {
@@ -422,9 +429,12 @@ img {
   flex-wrap: wrap;
   width: 100%;
   text-align: center;
-
-  color: rgb(255, 255, 255);
   background-color: rgb(130, 179, 211);
+  color: rgb(255, 255, 255);
+}
+
+.advantages-item-wide .advantages-title {
+  color: rgb(255, 255, 255);
 }
 
 .advantages-item-wide-reverse {
@@ -466,6 +476,7 @@ img {
   line-height: 28px;
   text-align: center;
   text-transform: uppercase;
+  color: rgb(0, 0, 0);
 
   margin: 0;
   margin-bottom: 30px;
@@ -508,7 +519,7 @@ img {
 }
 
 .services-item-odd {
-  background-color: rgba(131, 179, 211, 0.2);
+  background-color: rgba(131, 179, 211, 0.12);
 }
 
 .search {
@@ -555,9 +566,9 @@ img {
 }
 
 .newsletter-heading {
+  font-size: 30px;
   font-weight: 700;
-  font-size: 24px;
-  line-height: 28px;
+  line-height: 36px;
   text-align: center;
   text-transform: uppercase;
 
@@ -829,7 +840,7 @@ img {
   margin-top: 56px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: flex-start;
 }
 
 .price-control-inputs {
@@ -1044,13 +1055,13 @@ img {
   font-size: 18px;
   line-height: 21px;
   align-self: center;
+  color: rgb(51, 51, 51);
 
   width: 292px;
   margin-left: auto;
   padding: 10px 20px;
   border: 2px solid rgb(229, 229, 229);
   border-radius: 4px;
-  color: rgb(51, 51, 51);
 
   appearance: none;
   background-image: url(../images/arrow-to-bottom.svg);
@@ -1069,10 +1080,6 @@ img {
 .select-control:disabled {
   border: 2px solid rgba(0, 0, 0, 0.3);
   color: rgb(229, 229, 229);
-}
-
-.select-control-option {
-  color: rgb(51, 51, 51);
 }
 
 .catalog-view-list {
@@ -1279,6 +1286,14 @@ img {
   color: rgb(0, 0, 0);
 }
 
+.pagination-link.pagination-three-dots:hover {
+  background-color: rgb(242, 242, 242);
+}
+
+.pagination-link.pagination-three-dots:active {
+  opacity: 0.5;
+}
+
 .pagination-link.pagination-current {
   text-align: center;
   text-transform: uppercase;
@@ -1373,7 +1388,6 @@ img {
   cursor: pointer;
   border: none;
   outline: none;
-  border-radius: 4px;
   background-color: rgb(242, 242, 242);
   color: rgb(0, 0, 0);
   font-size: 18px;
@@ -1413,6 +1427,11 @@ img {
   grid-column: 2 / -1;
   line-height: 24px;
   padding: 12px 20px;
+  border-radius: 4px;
+
+  background-image: url("../images/calendar.svg");
+  background-repeat: no-repeat;
+  background-position: right 20px center;
 }
 
 .input-description {
@@ -1438,6 +1457,7 @@ img {
 .input-amount-wrapper {
   display: flex;
   background-color: rgb(242, 242, 242);
+  border-radius: 4px;
 }
 
 .input-amount-wrapper-adults {
@@ -1449,7 +1469,7 @@ img {
   text-align: center;
   line-height: 20px;
   padding: 14px 10px;
-  width: 51px;
+  min-width: 31px;
 }
 
 .button-input-amount {
@@ -1487,8 +1507,78 @@ img {
   fill-opacity: 0.2;
 }
 
+.button-minus {
+  border-radius: 4px 0 0 4px;
+}
+
+.button-plus {
+  border-radius: 0 4px 4px 0;
+}
+
 .input-label-children {
   grid-column: 4 / 5;
+  display: flex;
+}
+
+/* Поповер */
+
+.popover-information {
+  position: relative;
+  cursor: pointer;
+  margin-left: 10px;
+  background-image: url("../images/modal-children-info.svg");
+  background-color: rgb(131, 179, 211);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+}
+
+.popover-information:hover {
+  background-color: rgb(104, 162, 202);
+}
+
+.popover-information:active {
+  background-color: rgba(104, 162, 202, 0.7);
+}
+
+.popover-information-paragraph {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  left: -115px;
+  top: 41px;
+  width: 256px;
+  padding: 15px 18px 18px 22px;
+  border-radius: 10px;
+  background-color: rgb(51, 51, 51);
+  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.30);
+
+  color: rgb(255, 255, 255);
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: none;
+  word-break: keep-all;
+}
+
+.popover-information:hover .popover-information-paragraph{
+  display: block;
+}
+
+.popover-information-paragraph::before {
+  content: "";
+  position: absolute;
+  top: -17px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 9px solid transparent;
+  border-right: 9px solid transparent;
+  border-bottom: 19px solid #f95959;
 }
 
 .input-amount-wrapper-children {
