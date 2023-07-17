@@ -4,7 +4,9 @@
   box-sizing: border-box;
 }
 
-/* Подключение шрифтов */
+/* ================
+Подключение шрифтов
+================= */
 @font-face {
   font-family: "PT Sans";
   font-style: normal;
@@ -22,7 +24,9 @@
 }
 
 
-/* Общая стилизация*/
+/* ================
+Общая стилизация
+================ */
 html {
   height: 100%;
 }
@@ -56,7 +60,9 @@ img {
   object-fit: contain;
 }
 
-/*Header*/
+/* ================
+Header
+================ */
 
 .page-header {
   background: rgb(255, 255, 255);
@@ -212,7 +218,7 @@ img {
   text-transform: uppercase;
 }
 
-/*Main главной страницы*/
+/* Main главной страницы */
 .main-container {
   flex-grow: 1;
 }
@@ -272,6 +278,7 @@ img {
   padding: 0;
 }
 
+/* Кнопки */
 .button-brown {
   font-family: inherit;
   background-color: rgb(117, 97, 87);
@@ -542,7 +549,6 @@ img {
   background-color: rgb(117, 97, 87);
 }
 
-
 /* Блок подписки */
 .newsletter {
   padding-top: 96px;
@@ -712,7 +718,9 @@ img {
   fill-opacity: 0.3;
 }
 
-/* Каталог */
+/* ================
+Каталог
+================ */
 
 /* Фильтр каталога */
 .inner-header-title {
@@ -1024,7 +1032,6 @@ img {
   fill: rgba(255, 255, 255, 0.3);
 }
 
-
 /* Каталог отелей */
 /* Header каталога */
 .catalog-hotels {
@@ -1241,7 +1248,6 @@ img {
   color: rgb(0, 0, 0);
 }
 
-
 /* Пагинация */
 .pagination-list {
   display: flex;
@@ -1305,9 +1311,9 @@ img {
   background: rgb(242, 242, 242);
 }
 
-
-
-/* Модальное окно */
+/* ================
+Модальное окно
+================ */
 
 .modal-container {
   position: fixed;
@@ -1592,7 +1598,7 @@ img {
   align-items: center;
   flex-wrap: wrap;
   width: 100%;
-  margin-top: 25px; /* 48px - row-gap=23px */
+  margin-top: 25px; /* 48px - row-gap = 23px */
   padding: 0;
   min-height: 60px;
   border: none;
