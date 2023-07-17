@@ -669,7 +669,7 @@ img {
   width: 47px;
 }
 
-.socials-link:hover svg path{
+.socials-link:hover path{
   fill: rgb(104, 162, 202);
 }
 
@@ -704,11 +704,11 @@ img {
   align-items: center;
 }
 
-.page-footer-logo:hover svg path {
+.page-footer-logo:hover path {
   fill: rgb(117, 97, 87);
 }
 
-.page-footer-logo:active svg path {
+.page-footer-logo:active path {
   fill-opacity: 0.3;
 }
 
@@ -1012,7 +1012,7 @@ img {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.breadcrumbs-link:hover svg path{
+.breadcrumbs-link:hover path{
   fill: rgba(255, 255, 255, 0.6);
 }
 
@@ -1020,7 +1020,7 @@ img {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.breadcrumbs-link:active svg path{
+.breadcrumbs-link:active path{
   fill: rgba(255, 255, 255, 0.3);
 }
 
@@ -1487,7 +1487,7 @@ img {
   cursor: pointer;
 }
 
-.button-input-amount:hover svg path{
+.button-input-amount:hover path{
   fill: rgb(0, 0, 0);
   fill-opacity: 1;
 }
@@ -1501,7 +1501,7 @@ img {
   outline: none;
 }
 
-.button-input-amount:active svg path{
+.button-input-amount:active path{
   fill-opacity: 0.2;
 }
 
