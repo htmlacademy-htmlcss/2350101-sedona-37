@@ -1518,6 +1518,7 @@ img {
 .input-label-children {
   grid-column: 4 / 5;
   display: flex;
+  flex-wrap: wrap;
 }
 
 /* Поповер */
