@@ -453,6 +453,7 @@ img {
 /* Сервисы */
 .services-list {
   display: flex;
+  flex-wrap: wrap;
 
   margin: 0;
   padding: 0;
@@ -518,7 +519,7 @@ img {
   margin: 0;
 }
 
-.services-item-odd {
+.services-item:nth-child(2n+1) {
   background-color: rgba(131, 179, 211, 0.12);
 }
 
@@ -1469,23 +1470,19 @@ img {
   text-align: center;
   line-height: 20px;
   padding: 14px 10px;
-  min-width: 31px;
+  min-width: 43px;
 }
 
 .button-input-amount {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-width: 40px;
+  min-width: 34px;
   min-height: 48px;
   padding: 14px 10px;
   border: none;
   outline: none;
   cursor: pointer;
-}
-
-.button-input-amount:hover {
-  background-color: rgb(230, 230, 230);
 }
 
 .button-input-amount:hover svg path{
@@ -1499,7 +1496,6 @@ img {
 }
 
 .button-input-amount:active {
-  background-color: rgb(230, 230, 230);
   outline: none;
 }
 
@@ -1509,10 +1505,12 @@ img {
 
 .button-minus {
   border-radius: 4px 0 0 4px;
+  padding-right: 4px;
 }
 
 .button-plus {
   border-radius: 0 4px 4px 0;
+  padding-left: 4px;
 }
 
 .input-label-children {
@@ -1571,14 +1569,14 @@ img {
 .popover-information-paragraph::before {
   content: "";
   position: absolute;
-  top: -17px;
+  top: -9px;
   left: 50%;
   transform: translateX(-50%);
   width: 0;
   height: 0;
   border-left: 9px solid transparent;
   border-right: 9px solid transparent;
-  border-bottom: 19px solid #f95959;
+  border-bottom: 9px solid rgb(51, 51, 51);
 }
 
 .input-amount-wrapper-children {
