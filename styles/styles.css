@@ -1098,6 +1098,8 @@ img {
 }
 
 .view-button {
+  cursor: pointer;
+  background-color: inherit;
   border: 2px solid rgb(229, 229, 229);
   min-width: 20px;
   border-radius: 4px;
