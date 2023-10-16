@@ -32,9 +32,11 @@ html {
   height: 100%;
 }
 
-body{
+body {
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
   line-height: 21px;
   background: rgb(242, 242, 242);
   color: rgb(51, 51, 51);
@@ -49,6 +51,7 @@ body{
       -ms-flex-direction: column;
           flex-direction: column;
   min-height: 100%;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
 }
 
 .visually-hidden {
@@ -72,12 +75,13 @@ Header
 
 .page-header {
   background: rgb(255, 255, 255);
-  color:rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
   font-weight: 700;
+  font-style: normal;
   font-size: 20px;
   line-height: 24px;
 
-  margin-bottom: -5px;
+  margin-bottom: -6px;
 }
 
 .navigation {
@@ -91,6 +95,8 @@ Header
   display: block;
   position: relative;
   z-index: 1;
+  width: 140px;
+  height: 70px;
 }
 
 .navigation-sedona-logo:hover {
@@ -115,10 +121,6 @@ Header
   max-width: 500px;
 }
 
-.navigation-item {
-  padding-top: 20px;
-}
-
 .navigation-user-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -136,17 +138,20 @@ Header
 
 .navigation-link {
   position: relative;
-
+  display: block;
   padding: 20px 16px;
 
   text-align: center;
   text-decoration: none;
-  background: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
 }
 
 .navigation-link:hover {
   color: rgba(0, 0, 0, 0.7);
+}
+
+.navigation-link:focus {
+  outline: 2px solid rgb(0, 0, 0);
 }
 
 .navigation-link:active {
@@ -160,7 +165,7 @@ Header
   bottom: 0;
   left: 16px;
   height: 2px;
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(117, 98, 87);
 }
 
 .navigation-user-link {
@@ -182,6 +187,10 @@ Header
   opacity: 0.7;
 }
 
+.navigation-link-search:focus {
+  opacity: 0.7;
+}
+
 .navigation-link-search:active {
   opacity: 0.5;
 }
@@ -192,6 +201,10 @@ Header
 }
 
 .navigation-link-favourites:hover {
+  opacity: 0.7;
+}
+
+.navigation-link-favourites:focus {
   opacity: 0.7;
 }
 
@@ -222,6 +235,8 @@ Header
   min-height: 20px;
   border-radius: 50%;
   font-size: 10px;
+  font-style: normal;
+  font-weight: 400;
   line-height: 10px;
   color: rgb(255, 255, 255);
 }
@@ -241,6 +256,8 @@ Header
   margin-left: 20px;
 
   font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
   line-height: 20px;
   text-align: center;
   text-decoration: none;
@@ -254,24 +271,31 @@ Header
           flex-grow: 1;
 }
 
-.main-index, .main-inner {
+.main-index,
+.main-inner {
   background-color: rgb(255, 255, 255);
 }
 
 .hero {
   background-color: rgb(44, 71, 94);
-  background-image: url("../images/sedona-background-bottom.svg"), url("../images/sedona-background.jpg");
-  background-repeat: no-repeat, no-repeat;
-  background-size: 100%, cover;
-  background-position: bottom, center bottom;
+  background-image: url("../images/sedona-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom;
   text-align: center;
 
   padding-top: 50px;
   padding-bottom: 80px;
 }
 
+.welcome-img {
+  width: 458px;
+  height: 352px;
+}
+
 .advantages-start-wrapper {
   padding: 69px 274px;
+  margin-bottom: 21px;
 }
 
 .advantages-end-wrapper {
@@ -281,6 +305,7 @@ Header
 .lead {
   color: rgb(0, 0, 0);
   font-weight: 700;
+  font-style: normal;
   font-size: 30px;
   line-height: 36px;
   text-align: center;
@@ -297,6 +322,8 @@ Header
 
 .desc {
   font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
   line-height: 26px;
   color: rgb(51, 51, 51);
   text-align: center;
@@ -312,6 +339,8 @@ Header
 /* Кнопки */
 .button-brown {
   font-family: inherit;
+  font-style: normal;
+  font-weight: 700;
   background-color: rgb(117, 97, 87);
   color: rgb(255, 255, 255);
   text-decoration: none;
@@ -325,6 +354,10 @@ Header
   background-color: rgb(97, 80, 72);
 }
 
+.button-brown:focus {
+  background-color: rgb(97, 80, 72);
+}
+
 .button-brown:active {
   background-color: rgb(117, 97, 87);
   color: rgba(255, 255, 255, 0.3);
@@ -332,6 +365,8 @@ Header
 
 .button-blue {
   font-family: inherit;
+  font-style: normal;
+  font-weight: 400;
   background-color: rgb(130, 179, 211);
   color: rgb(255, 255, 255);
   text-decoration: none;
@@ -345,6 +380,10 @@ Header
   background-color: rgb(104, 162, 202);
 }
 
+.button-blue:focus {
+  background-color: rgb(104, 162, 202);
+}
+
 .button-blue:active {
   background-color: rgb(130, 179, 211);
   color: rgba(255, 255, 255, 0.3);
@@ -352,6 +391,8 @@ Header
 
 .button-green {
   font-family: inherit;
+  font-style: normal;
+  font-weight: 400;
   background-color: rgb(125, 181, 79);
   color: rgb(255, 255, 255);
   text-decoration: none;
@@ -381,14 +422,21 @@ Header
 }
 
 .button-transparent:hover {
-  opacity: 0.6000000238418579;
+  opacity: 0.6;
+}
+
+.button-transparent:focus {
+  color: rgb(255, 255, 255);
+  outline: 3px solid rgb(131, 179, 211);
 }
 
 .button-transparent:active {
-  outline: 3px solid #83B3D3;
+  color: rgba(255, 255, 255, 0.3);
 }
 
-.button-brown:disabled, .button-blue:disabled, .button-green:disabled {
+.button-brown:disabled,
+.button-blue:disabled,
+.button-green:disabled {
   background-color: rgb(229, 229, 229);
   color: rgb(255, 255, 255);
 }
@@ -416,6 +464,7 @@ Header
   width: 175px;
 
   font-weight: 700;
+  font-style: normal;
   font-size: 24px;
   line-height: 28px;
   text-align: center;
@@ -427,7 +476,7 @@ Header
   content: "";
   display: block;
   margin: 30px auto 0;
-  background-color: rgba(0, 0, 0, 0.30);
+  background-color: rgba(0, 0, 0, 0.3);
   width: 60px;
   height: 2px;
 }
@@ -436,7 +485,7 @@ Header
   content: "";
   display: block;
   margin: 30px auto 0;
-  background-color: rgba(255, 255, 255, 0.30);
+  background-color: rgba(255, 255, 255, 0.3);
   width: 60px;
   height: 2px;
 }
@@ -452,6 +501,8 @@ Header
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  width: 800px;
+  height: 385px;
 }
 
 .advantages-item-wrapper {
@@ -543,11 +594,14 @@ Header
 
 .services-title {
   font-weight: 700;
+  font-style: normal;
   font-size: 24px;
   line-height: 28px;
   text-align: center;
   text-transform: uppercase;
   color: rgb(0, 0, 0);
+  width: 230px;
+  word-wrap: break-word;
 
   margin: 0;
   margin-bottom: 30px;
@@ -603,6 +657,7 @@ Header
   padding: 8px 50px;
 
   font-weight: 700;
+  font-style: normal;
   font-size: 20px;
   line-height: 36px;
   text-align: center;
@@ -619,7 +674,7 @@ Header
   padding-bottom: 104px;
   padding-left: 258px;
 
-  background-color: rgba(131, 179, 211, 0.12);
+  background-color: rgb(44, 71, 94);
   background-image: url("../images/subscribe-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -640,6 +695,7 @@ Header
 .newsletter-heading {
   font-size: 30px;
   font-weight: 700;
+  font-style: normal;
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
@@ -671,12 +727,15 @@ Header
   outline: none;
   border-radius: 4px 0 0 4px;
 
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
 }
 
 .field[type="email"]:hover {
   background-color: rgb(230, 230, 230);
-  outline: 0;
+  outline: none;
 }
 
 .field[type="email"]:focus {
@@ -687,9 +746,15 @@ Header
   outline: 2px solid rgb(131, 179, 211);
 }
 
+.field[type="email"]:disabled {
+  background-color: rgb(220, 220, 220);
+  outline: none;
+}
+
 .newsletter-button {
   font-weight: 700;
   font-size: 20px;
+  font-style: normal;
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
@@ -760,13 +825,18 @@ Header
   width: 47px;
 }
 
-.socials-link:hover path{
+.socials-link:hover path {
   fill: rgb(104, 162, 202);
 }
 
 .socials-link:active {
   fill: rgb(104, 162, 202);
   fill-opacity: 0.3;
+}
+
+.page-footer-address {
+  display: flex;
+  align-items: center;
 }
 
 .page-footer-address-phone {
@@ -780,6 +850,7 @@ Header
 
   font-style: normal;
   font-size: 40px;
+  font-weight: 400;
   line-height: 40px;
   text-align: center;
   text-decoration: none;
@@ -788,6 +859,10 @@ Header
 }
 
 .page-footer-address-phone:hover {
+  color: rgb(117, 97, 87);
+}
+
+.page-footer-address-phone:focus {
   color: rgb(117, 97, 87);
 }
 
@@ -822,6 +897,7 @@ Header
   margin-bottom: 8px;
 
   font-weight: 700;
+  font-style: normal;
   font-size: 60px;
   line-height: 78px;
 }
@@ -876,6 +952,7 @@ Header
 
 .catalog-filter-title {
   font-weight: 700;
+  font-style: normal;
   font-size: 20px;
   line-height: 24px;
 
@@ -893,6 +970,8 @@ Header
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  max-width: 150px;
+  word-wrap: break-all;
 }
 
 .catalog-filter-item:not(:last-child) {
@@ -914,13 +993,21 @@ Header
   opacity: 0.6;
 }
 
+.control:active {
+  opacity: 0.3;
+}
+
+.control-input[type="checkbox"]:disabled {
+  opacity: 0.2;
+}
+
 .control-input[type="checkbox"] {
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
   background-color: rgb(255, 255, 255);
   border-radius: 4px;
-  width: 20px;
+  min-width: 20px;
   height: 20px;
   margin: 0;
   margin-right: 16px;
@@ -930,7 +1017,7 @@ Header
 .control-input[type="checkbox"]:checked {
   background-image: url("../images/tick.svg");
   background-repeat: no-repeat;
-  width: 20px;
+  min-width: 20px;
   height: 20px;
 }
 
@@ -944,7 +1031,7 @@ Header
           appearance: none;
   background-color: rgb(255, 255, 255);
   border-radius: 50%;
-  width: 20px;
+  min-width: 20px;
   height: 20px;
   margin: 0;
   margin-right: 16px;
@@ -988,7 +1075,7 @@ Header
 }
 
 input[type=number] {
-  -moz-appearance:textfield;
+  -moz-appearance: textfield;
 }
 
 .price-control-input {
@@ -1034,7 +1121,7 @@ input[type=number] {
           transform: translateY(-50%);
   right: 20px;
   color: rgb(0, 0, 0);
-  opacity: 0.30000001192092896;
+  opacity: 0.3;
 }
 
 
@@ -1064,6 +1151,10 @@ input[type=number] {
   cursor: pointer;
 }
 
+.range-toggle:hover {
+  background-color: rgb(255, 255, 255);
+}
+
 .range-toggle:focus {
   outline: 3px solid rgb(131, 179, 211);
 }
@@ -1083,20 +1174,22 @@ input[type=number] {
 .button-submit {
   font-family: inherit;
   font-weight: 700;
+  font-style: normal;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
   background-color: rgb(130, 179, 211);
   color: rgb(255, 255, 255);
-  border: none;
 
+  border: none;
   padding: 8px 50px;
 }
 
 .button-reset {
   font-family: inherit;
   font-weight: 700;
+  font-style: normal;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
@@ -1146,6 +1239,8 @@ input[type=number] {
   min-height: 13px;
 
   font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
   text-decoration: none;
   color: rgb(255, 255, 255);
 }
@@ -1154,7 +1249,7 @@ input[type=number] {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.breadcrumbs-link:hover path{
+.breadcrumbs-link:hover path {
   fill: rgba(255, 255, 255, 0.6);
 }
 
@@ -1162,7 +1257,7 @@ input[type=number] {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.breadcrumbs-link:active path{
+.breadcrumbs-link:active path {
   fill: rgba(255, 255, 255, 0.3);
 }
 
@@ -1187,6 +1282,7 @@ input[type=number] {
   margin: 0;
   font-weight: 700;
   font-size: 30px;
+  font-style: normal;
   line-height: 36px;
   text-transform: uppercase;
 
@@ -1203,6 +1299,8 @@ input[type=number] {
 .select-control {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
   line-height: 21px;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -1212,7 +1310,10 @@ input[type=number] {
 
   width: 292px;
   margin-left: auto;
-  padding: 10px 20px;
+  padding-top: 10px;
+  padding-right: 40px;
+  padding-bottom: 10px;
+  padding-left: 20px;
   border: 2px solid rgb(229, 229, 229);
   border-radius: 4px;
 
@@ -1221,7 +1322,7 @@ input[type=number] {
      -moz-appearance: none;
 
           appearance: none;
-  background-image: url(../images/arrow-to-bottom.svg);
+  background-image: url("../images/arrow-to-bottom.svg");
   background-repeat: no-repeat;
   background-position: right 20px center;
 }
@@ -1236,13 +1337,14 @@ input[type=number] {
 
 .select-control:disabled {
   border: 2px solid rgba(0, 0, 0, 0.3);
-  color: rgb(229, 229, 229);
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .catalog-view-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-wrap: wrap;
   max-width: 160px;
 
   margin: 0;
@@ -1251,7 +1353,7 @@ input[type=number] {
   list-style: none;
 }
 
-.catalog-view-item {
+.catalog-view-item:not(:last-child) {
   margin-right: 8px;
 }
 
@@ -1261,7 +1363,7 @@ input[type=number] {
   border: 2px solid rgb(229, 229, 229);
   min-width: 20px;
   border-radius: 4px;
-  padding: 14px 12px;
+  padding: 15px 14px;
 
   display: -webkit-box;
 
@@ -1276,7 +1378,8 @@ input[type=number] {
           align-items: center;
 }
 
-.view-button:hover, .view-button-current {
+.view-button:hover,
+.view-button-current {
   border: 2px solid rgb(0, 0, 0);
 }
 
@@ -1286,10 +1389,6 @@ input[type=number] {
 
 .view-button:active {
   border: 2px solid rgb(0, 0, 0);
-}
-
-.catalog-view-item:last-child {
-  margin-right: 0;
 }
 
 /* Карточки отелей */
@@ -1345,11 +1444,11 @@ input[type=number] {
 
 .hotel-card-image {
   display: block;
+  width: 300px;
+  height: 212px;
 
   -ms-grid-column: 1;
-
   -ms-grid-column-span: 2;
-
   grid-column: 1 / span 2;
 }
 
@@ -1370,6 +1469,7 @@ input[type=number] {
 .hotel-card-title {
   font-weight: 700;
   font-size: 24px;
+  font-style: normal;
   line-height: 28px;
 
   margin: 0;
@@ -1431,7 +1531,8 @@ input[type=number] {
           align-items: center;
 }
 
-.hotel-card-more, .hotel-card-button-favourite {
+.hotel-card-more,
+.hotel-card-button-favourite {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1449,6 +1550,7 @@ input[type=number] {
 
   font-weight: 700;
   font-size: 16px;
+  font-style: normal;
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
@@ -1497,11 +1599,17 @@ input[type=number] {
   min-width: 60px;
   height: 60px;
 
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
   text-align: center;
   text-transform: uppercase;
   color: rgb(255, 255, 255);
   text-decoration: none;
   background-color: rgb(130, 179, 211);
+  border-radius: 4px;
 }
 
 .pagination-link:hover {
@@ -1577,6 +1685,7 @@ input[type=number] {
 .modal-heading {
   font-size: 30px;
   font-weight: 700;
+  font-style: normal;
   line-height: 36px;
   text-transform: uppercase;
   margin: 0;
@@ -1611,7 +1720,7 @@ input[type=number] {
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: 73px 23px 73px 23px 48px;
-  grid-template-rows: 73px 73px 48px;
+  grid-template-rows: 73px 73px 1fr;
   row-gap: 23px;
 }
 
@@ -1624,13 +1733,14 @@ input[type=number] {
 
 .modal-input {
   font-family: inherit;
+  font-size: 18px;
+  font-weight: 700;
+  font-style: normal;
   cursor: pointer;
   border: none;
   outline: none;
   background-color: rgb(242, 242, 242);
   color: rgb(0, 0, 0);
-  font-size: 18px;
-  font-weight: 700;
 }
 
 .modal-input:hover {
@@ -1639,6 +1749,10 @@ input[type=number] {
 
 .modal-input:active {
   background-color: rgb(242, 242, 242);
+}
+
+.modal-input:disabled {
+  background-color: rgb(220, 220, 220);
 }
 
 .input-date-wrapper {
@@ -1660,6 +1774,7 @@ input[type=number] {
 
   font-size: 20px;
   font-weight: 700;
+  font-style: normal;
   line-height: 24px;
   text-transform: capitalize;
 }
@@ -1695,6 +1810,8 @@ input[type=number] {
   grid-row: 2 / 3;
 
   font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
   line-height: 21px;
 }
 
@@ -1747,23 +1864,28 @@ input[type=number] {
   border: none;
   outline: none;
   cursor: pointer;
+  background-color: rgb(242, 242, 242);
 }
 
-.button-input-amount:hover path{
+.button-input-amount:hover path {
   fill: rgb(0, 0, 0);
   fill-opacity: 1;
 }
 
-.button-input-amount:focus svg{
+.button-input-amount:focus svg {
   border-radius: 4px;
-  outline: 3px solid #82B3D3;
+  outline: 3px solid rgb(130, 179, 211);
 }
 
 .button-input-amount:active {
   outline: none;
 }
 
-.button-input-amount:active path{
+.button-input-amount:disabled path{
+  fill-opacity: 0.15;
+}
+
+.button-input-amount:active path {
   fill-opacity: 0.2;
 }
 
@@ -1807,6 +1929,10 @@ input[type=number] {
   background-color: rgb(104, 162, 202);
 }
 
+.popover-information:focus {
+  background-color: rgb(104, 162, 202);
+}
+
 .popover-information:active {
   background-color: rgba(104, 162, 202, 0.7);
 }
@@ -1821,26 +1947,27 @@ input[type=number] {
   padding: 15px 18px 18px 22px;
   border-radius: 10px;
   background-color: rgb(51, 51, 51);
-  -webkit-box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.30);
-          box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.30);
+  -webkit-box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.3);
 
   color: rgb(255, 255, 255);
   font-family: inherit;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
+  font-style: normal;
   text-transform: none;
   word-break: keep-all;
 }
 
-.popover-information:hover .popover-information-paragraph{
+.popover-information:hover .popover-information-paragraph {
   display: block;
 }
 
 .popover-information-paragraph::before {
   content: "";
   position: absolute;
-  top: -9px;
+  top: -8px;
   left: 50%;
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
@@ -1880,9 +2007,10 @@ input[type=number] {
   cursor: pointer;
 
   color: rgb(255, 255, 255);
-  background: #83B3D3;
+  background: rgb(131, 179, 211);
   font-size: 20px;
   font-weight: 700;
+  font-style: normal;
   line-height: 24px;
   text-transform: uppercase;
 }

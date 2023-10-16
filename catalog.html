@@ -26,8 +26,8 @@
         </ul>
         <ul class="navigation-user-list">
           <li class="navigation-user-item">
-            <span class="visually-hidden">Поиск.</span>
             <a href="#" class="navigation-user-link navigation-link-search">
+              <span class="visually-hidden">Поиск.</span>
             </a>
           </li>
           <li class="navigation-user-item">
@@ -115,24 +115,25 @@
                   <legend class="catalog-filter-title">Стоимость, ₽:</legend>
                   <div class="price-control-inputs">
                     <label class="price-control-input-label">
-                      <input class="price-control-input price-min-control-input" type="number" value="0">
+                      <input name="min-cost" class="price-control-input price-min-control-input" type="number" value="0">
                       <span class="price-control-input-span">от</span>
                     </label>
                     <label class="price-control-input-label">
-                      <input class="price-control-input price-max-control-input" type="number" value="9000">
+                      <input name="max-cost" class="price-control-input price-max-control-input" type="number" value="9000">
                       <span class="price-control-input-span">до</span>
                     </label>
                   </div>
                   <div class="range">
                     <div class="range-scale">
                       <div class="range-bar" style="left: 0; width: 226px;">
-                        <span class="visually-hidden">Изменить минимальную цену.</span>
-                        <button class="range-toggle toggle-min" type="button"></button>
-                        <span class="visually-hidden">Изменить максимальную цену.</span>
-                        <button class="range-toggle toggle-max" type="button"></button>
+                        <button class="range-toggle toggle-min" type="button">
+                          <span class="visually-hidden">Изменить минимальную цену.</span>
+                        </button>
+                        <button class="range-toggle toggle-max" type="button">
+                          <span class="visually-hidden">Изменить максимальную цену.</span>
+                        </button>
                       </div>
                     </div>
-
                   </div>
                 </fieldset>
                 <div class="catalog-filter-buttons catalog-filter-group-right">
@@ -264,7 +265,7 @@
         <h2 class="newsletter-heading">Подпишитесь на рассылку</h2>
         <p class="desc newsletter-desc catalog-newsletter-desc">Только полезная информация и никакого спама, честное&nbsp;бойскаутское!</p>
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-          <label for="newsletter-email" hidden>Email.</label>
+          <label for="newsletter-email" class="visually-hidden">Email.</label>
           <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email" id="newsletter-email" required>
           <button class="button-blue newsletter-button" type="submit">Подписаться</button>
         </form>
